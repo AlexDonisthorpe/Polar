@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d15208d0265e46ea80c1dc9d075f051, type: 3}
+  m_Name: C69FE545-8038-410E-9288-F54DE182EF36
+  m_EditorClassIdentifier: 
+  objectName: Play_bounce_crystal__R
+  id: 4230651823
+  guid: C69FE545-8038-410E-9288-F54DE182EF36
