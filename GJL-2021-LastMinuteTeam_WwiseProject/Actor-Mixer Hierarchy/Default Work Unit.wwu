@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B0A5546F-BE40-478C-9FB5-BD2642734B06}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{B0A5546F-BE40-478C-9FB5-BD2642734B06}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B0A5546F-BE40-478C-9FB5-BD2642734B06}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="bounce crystal _R" ID="{58EEAB43-7784-4DE0-B46A-127FEC67E71E}" ShortID="651629232">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B58CED23-CCFD-4919-B936-3CD36E14F2F7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{068E124C-2499-44B1-9109-B3AB66F5E748}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="bounce crystal _R" ID="{0248DB36-02B3-41D7-B3D0-2CEFC1EE8172}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="6.98050499131944"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>bounce crystal .R.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="906991738"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="bounce crystal _R" ID="{0248DB36-02B3-41D7-B3D0-2CEFC1EE8172}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

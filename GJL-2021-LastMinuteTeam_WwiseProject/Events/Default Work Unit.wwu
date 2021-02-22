@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{87381168-2AC2-4AAC-B673-1304D3A84FA7}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{87381168-2AC2-4AAC-B673-1304D3A84FA7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{87381168-2AC2-4AAC-B673-1304D3A84FA7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play" ID="{FD8149D0-053D-48D8-BB8A-0C920C3A158A}">
+					<ChildrenList>
+						<Action Name="" ID="{0D4FB6B4-B275-4453-B4A7-378D1B6F8826}" ShortID="102315837">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bounce crystal _R" ID="{58EEAB43-7784-4DE0-B46A-127FEC67E71E}" WorkUnitID="{B0A5546F-BE40-478C-9FB5-BD2642734B06}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
