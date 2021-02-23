@@ -1,0 +1,15 @@
+image references:
+blured background: https://images.pexels.com/photos/2937792/pexels-photo-2937792.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260
+
+font references:
+wood warrior: https://www.1001fonts.com/woodwarrior-font.html
+
+snowflake:
+https://opengameart.org/content/snow-flake
+
+controls:
+https://opengameart.org/content/xbox-one-controller
+https://opengameart.org/content/keyboard-keys
+
+Clouds:
+https://assetstore.unity.com/packages/3d/3le-low-poly-cloud-pack-65911
