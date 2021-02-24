@@ -20,6 +20,11 @@ namespace Polar.Obstacles
             }
         }
 
+        public void Cleanup()
+        {
+            Destroy(gameObject);
+        }
+
     }
 }
 
