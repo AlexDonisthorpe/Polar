@@ -21,7 +21,7 @@ public class TL_MoveCharacter : MonoBehaviour
         Vector3 PlayerMovement = new Vector3(xInput, 0f, zInput).normalized;
 
         //Move the character's rigidbody with move position
-        CharacterRigidbody.MovePosition(transform.position + (PlayerMovement * Speed * Time.fixedDeltaTime));
+        CharacterRigidbody.MovePosition(transform.localPosition + (PlayerMovement * Speed * Time.fixedDeltaTime));
     }
 
     void FixedUpdate()

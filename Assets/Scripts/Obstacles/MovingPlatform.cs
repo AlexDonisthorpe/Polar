@@ -69,5 +69,21 @@ namespace Polar.Obstacles
             }
         }
 
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.CompareTag("Player"))
+            {
+                other.transform.SetParent(transform, true);
+            }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                other.transform.SetParent(null);
+            }
+        }
+
     }
 }

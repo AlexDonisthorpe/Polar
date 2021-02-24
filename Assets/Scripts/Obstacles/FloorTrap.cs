@@ -20,7 +20,6 @@ namespace Polar.Obstacles
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Hello!");
             if (!hasTriggered && other.CompareTag("Player"))
             {
                 StartCoroutine("WaitToTrigger");
