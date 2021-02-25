@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TL_AttachToPlayer : MonoBehaviour
 {
-    private float Elevation = 9f;
+    [SerializeField] private float Elevation = 2f;
     private Transform Player;
 
 
