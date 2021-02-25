@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc71c83acf09d664aa761a1bfbaf01af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetDelayTimer: 2
+  resetDelayTimer: 1
   triggerWaitTime: 1
 --- !u!95 &3811870312485482404
 Animator:
