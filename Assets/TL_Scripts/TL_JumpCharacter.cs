@@ -21,27 +21,22 @@ public class TL_JumpCharacter : MonoBehaviour
     void Jump()
     {
         //If the player presses the jmup button and if the character is touching the ground
-        if (Input.GetButton("Jump") && IsCharacterTouchingTheGround())
+        if (Input.GetKey(KeyCode.Space) && IsCharacterTouchingTheGround())
         {
-            //Store the default X velocity
-            float xAxis = CharacterRigidbody.velocity.x;
-
-            //Create a vector2 variable to store the X axis and the jump height
-            Vector2 JumpPosition = new Vector2(xAxis, JumpHeight);
-
-            //Set the velocity with the new jump position
-            CharacterRigidbody.velocity = JumpPosition;
+            //Add force to the Y position
+            CharacterRigidbody.AddForce(Vector3.up * JumpHeight, ForceMode.Impulse);
         }
     }
 
     //Checks if the character is touching the ground or not
     bool IsCharacterTouchingTheGround()
     {
-        return Physics.Raycast(transform.position, -Vector3.up, DistanceToGround);
+        return Physics.Raycast(transform.position, -Vector3.up, DistanceToGround + 0.1f);
     }
 
     void FixedUpdate()
     {
         Jump();
     }
+
 }
