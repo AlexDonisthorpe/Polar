@@ -29,7 +29,7 @@ public class TL_MoveCharacter : MonoBehaviour
         }
 
         //Move the character's rigidbody with move position
-        CharacterRigidbody.MovePosition(transform.position + (PlayerMovement * Speed * Time.fixedDeltaTime));
+        CharacterRigidbody.MovePosition(transform.localPosition + (PlayerMovement * Speed * Time.fixedDeltaTime));
     }
 
     void FixedUpdate()
