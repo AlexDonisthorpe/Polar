@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	1256202815	Play			\Default Work Unit\Play	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	906991738	bounce crystal _R	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\bounce crystal .R_765BBF34.wem		\Actor-Mixer Hierarchy\Default Work Unit\bounce crystal _R		16875118
-

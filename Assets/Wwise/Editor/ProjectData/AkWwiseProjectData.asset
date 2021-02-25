@@ -20,7 +20,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d73f643bc8aee54f98faa22470422138
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585875870222048913
+=======
+    m_lastTime: -8585875906364775808
+>>>>>>> parent of cd1926d... Wwise first sound
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +34,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4c128e069924b1449109b3ab66f5e748
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585875870224317194
+=======
+    m_lastTime: -8585875906364775808
+>>>>>>> parent of cd1926d... Wwise first sound
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,6 +57,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 41ddd483aca301498d5b0de383803617
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585875870222078923
     List:
     - name: MAIN
@@ -60,6 +69,10 @@ MonoBehaviour:
       - ElementName: MAIN
         ObjectType: 7
       Path: Default Work Unit\MAIN
+=======
+    m_lastTime: -8585875906364775808
+    List: []
+>>>>>>> parent of cd1926d... Wwise first sound
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -68,6 +81,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 68113887c22aac4ab6731304d3a84fa7
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585875870226787946
     List:
     - name: Play
@@ -82,6 +96,10 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 175.78181
       minDuration: 175.78181
+=======
+    m_lastTime: -8585875906364775808
+    List: []
+>>>>>>> parent of cd1926d... Wwise first sound
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -90,7 +108,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: abf32eb6ae24794e9e1ba10935bcda03
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585875870226757939
+=======
+    m_lastTime: -8585875906364775808
+>>>>>>> parent of cd1926d... Wwise first sound
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -100,7 +122,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23994911aa838b4da2e8ed5632a6f45b
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585875870222068918
+=======
+    m_lastTime: -8585875906364775808
+>>>>>>> parent of cd1926d... Wwise first sound
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -110,7 +136,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d62f08cc592373499c163d50d00b1979
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585875870222058909
+=======
+    m_lastTime: -8585875906364775808
+>>>>>>> parent of cd1926d... Wwise first sound
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -120,13 +150,12 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 03d31de2bf27d447b9f165b8d4ad3f18
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585875870222058909
+=======
+    m_lastTime: -8585875906364775808
+>>>>>>> parent of cd1926d... Wwise first sound
     List: []
-  ExpandedItems:
-  - /GJL-2021-LastMinuteTeam_WwiseProject
-  - /GJL-2021-LastMinuteTeam_WwiseProject/Events
-  - /GJL-2021-LastMinuteTeam_WwiseProject/Events/Default Work Unit
-  - /GJL-2021-LastMinuteTeam_WwiseProject/SoundBanks
-  - /GJL-2021-LastMinuteTeam_WwiseProject/SoundBanks/Default Work Unit
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
