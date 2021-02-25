@@ -1,9 +1,0 @@
-<?xml version='1.0'?>
-<WwiseSettings>
-    <CreateWwiseGlobal>true</CreateWwiseGlobal>
-    <CreateWwiseListener>true</CreateWwiseListener>
-    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
-    <WwiseProjectPath>../GJL-2021-LastMinuteTeam_WwiseProject/GJL-2021-LastMinuteTeam_WwiseProject.wproj</WwiseProjectPath>
-    <WwiseInstallationPathWindows></WwiseInstallationPathWindows>
-    <WwiseInstallationPathMac>/Volumes/Dillan hoyos/UNITY/Wwise1/Wwise.app</WwiseInstallationPathMac>
-</WwiseSettings>
