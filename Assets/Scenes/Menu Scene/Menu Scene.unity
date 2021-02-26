@@ -633,50 +633,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu
       objectReference: {fileID: 0}
-    - target: {fileID: 5624914677024229085, guid: 5e473f40e6dde804784094135a3c61d8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5624914677360083108, guid: 5e473f40e6dde804784094135a3c61d8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6539683699558453493, guid: 5e473f40e6dde804784094135a3c61d8,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 6539683699558453493, guid: 5e473f40e6dde804784094135a3c61d8,
-        type: 3}
-      propertyPath: m_fontSizeBase
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 6539683699558453493, guid: 5e473f40e6dde804784094135a3c61d8,
-        type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6539683699558453493, guid: 5e473f40e6dde804784094135a3c61d8,
-        type: 3}
-      propertyPath: m_enableWordWrapping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6539683699877860981, guid: 5e473f40e6dde804784094135a3c61d8,
-        type: 3}
-      propertyPath: m_isRightToLeft
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6539683699877860981, guid: 5e473f40e6dde804784094135a3c61d8,
-        type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6539683699877860981, guid: 5e473f40e6dde804784094135a3c61d8,
-        type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e473f40e6dde804784094135a3c61d8, type: 3}

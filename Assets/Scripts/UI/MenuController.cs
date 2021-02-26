@@ -10,6 +10,7 @@ namespace Polar.UI
         [SerializeField] GameObject _mainMenu;
         [SerializeField] GameObject _controlScreen;
         [SerializeField] GameObject _quitCanvas;
+        [SerializeField] GameObject _levelSelectScreen;
 
         public void LoadFirstLevel()
         {
@@ -26,8 +27,15 @@ namespace Polar.UI
 
         public void LoadMainMenu()
         {
+            _levelSelectScreen.SetActive(false);
             _controlScreen.SetActive(false);
             _mainMenu.SetActive(true);
+        }
+
+        public void LoadLevelSelect()
+        {
+            _mainMenu.SetActive(false);
+            _levelSelectScreen.SetActive(true);
         }
 
         public void StartQuit()
