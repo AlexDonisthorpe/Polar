@@ -59,12 +59,13 @@ namespace Polar.Obstacles
             _rigidbody.isKinematic = true;
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void OnCollisionEnter(Collision collision)
         {
-            if (other.CompareTag("Player"))
+            if (collision.gameObject.CompareTag("Player"))
             {
                 StartCoroutine("StartFalling");
             }
         }
+
     }
 }
