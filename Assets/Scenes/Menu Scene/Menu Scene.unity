@@ -528,6 +528,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: da85b3d6d3678244caad9cff3d05d7cd, type: 2}
+    - target: {fileID: 4305129082490445008, guid: 5e473f40e6dde804784094135a3c61d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5624914676966385826, guid: 5e473f40e6dde804784094135a3c61d8,
         type: 3}
       propertyPath: m_Pivot.x
@@ -637,6 +642,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624914677316739340, guid: 5e473f40e6dde804784094135a3c61d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624914677360083108, guid: 5e473f40e6dde804784094135a3c61d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7307076159782925360, guid: 5e473f40e6dde804784094135a3c61d8,
         type: 3}

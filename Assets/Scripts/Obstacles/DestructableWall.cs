@@ -7,7 +7,6 @@ namespace Polar.Obstacles
     public class DestructableWall : MonoBehaviour
     {
         private CrashCrate[] _boxes;
-        private bool hasBlownUp = false;
 
         [SerializeField] float boxExplosionForce = 500f;
 

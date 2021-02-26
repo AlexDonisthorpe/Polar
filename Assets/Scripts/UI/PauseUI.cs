@@ -9,6 +9,7 @@ namespace Polar.UI
         public static bool isPaused = false;
         [SerializeField] GameObject PauseMenuUI;
         private Animator _pauseAnimator;
+
         [SerializeField] private GameObject[] _buttonObjects;
 
         private void Start()
