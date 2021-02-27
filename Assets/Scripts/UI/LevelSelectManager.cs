@@ -15,6 +15,7 @@ namespace Polar.UI
         [SerializeField] Fader fader;
 
         private int currentLevel;
+        private int currentLevelSceneId;
 
         private void Start()
         {
@@ -23,17 +24,20 @@ namespace Polar.UI
 
         private void AssignLevel(int levelIndex)
         {
-            levelNameField.text = levels[levelIndex].name;
-            levelDescriptionField.text = levels[levelIndex].levelDescription;
-            screenshotField.sprite = levels[levelIndex].levelScreenshot;
-            currentLevel = levels[levelIndex].sceneId;
+            currentLevel = levelIndex;
+
+            levelNameField.text = levels[currentLevel].name;
+            levelDescriptionField.text = levels[currentLevel].levelDescription;
+            screenshotField.sprite = levels[currentLevel].levelScreenshot;
+
+            currentLevelSceneId = levels[currentLevel].sceneId;
 
             UpdateButtons();
         }
 
         private void UpdateButtons()
         {
-            if(currentLevel == levels[0].sceneId)
+            if(currentLevel == 0)
             {
                 previousLevelButton.SetActive(false);
             } else
@@ -41,7 +45,7 @@ namespace Polar.UI
                 previousLevelButton.SetActive(true);
             }
 
-            if(currentLevel == levels[levels.Length-1].sceneId)
+            if(currentLevel == levels.Length-1)
             {
                 nextLevelButton.SetActive(false);
             }
@@ -66,7 +70,7 @@ namespace Polar.UI
         public void StartPlay()
         {
             // Code smell, omg - no time - panik
-            fader.LoadLevel(currentLevel);
+            fader.LoadLevel(currentLevelSceneId);
         }
 
     }
