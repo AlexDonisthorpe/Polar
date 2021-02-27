@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3125472368743809132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.13, y: 3.86, z: 17.1}
-  m_LocalScale: {x: 3.6423001, y: 0.60705, z: 3.6423001}
+  m_LocalScale: {x: 8.0425005, y: 1.3404168, z: 8.0425005}
   m_Children:
   - {fileID: 7679103164892384139}
   m_Father: {fileID: 0}
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 945a37daea5c32543a45f65de134a06c, type: 2}
+  - {fileID: 2100000, guid: 3077630c2b552084084eefe0c912c1b5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,8 +114,8 @@ MonoBehaviour:
   WaypointIndex: 0
   PlatformSpeed: 2
   Waypoints:
-  - {x: 2, y: 2, z: 2}
-  - {x: 4, y: 4, z: 4}
+  - {x: 10, y: 4.75, z: 18.08}
+  - {x: -7, y: 4.75, z: 4.75}
   PlatformDirection: {x: 1, y: 1, z: 1}
 --- !u!54 &5973330936978011507
 Rigidbody:
@@ -128,10 +128,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!1 &7910566875487447119
 GameObject:
@@ -175,5 +175,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

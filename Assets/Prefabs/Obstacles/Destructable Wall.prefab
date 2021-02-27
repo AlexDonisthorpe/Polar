@@ -94,8 +94,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 3, z: 3}
-  m_Center: {x: 0, y: 1.5, z: 0.5}
+  m_Size: {x: 2, y: 3, z: 4}
+  m_Center: {x: -0.3, y: 1.5, z: 0.5}
 --- !u!114 &7787935979672694272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxExplosionForce: 500
+  parent: {fileID: 4750687373203899577}
 --- !u!1001 &1203565111557374935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -330,6 +331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crash_Crate_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9065924571364506927, guid: 8654b98aa3eb31f429efda783ab47db1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4262418605540733613, guid: 8654b98aa3eb31f429efda783ab47db1, type: 3}
     - {fileID: 1417637340330785042, guid: 8654b98aa3eb31f429efda783ab47db1, type: 3}
@@ -481,8 +487,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crash_Crate_2
       objectReference: {fileID: 0}
+    - target: {fileID: 9065924571364506927, guid: 0071951014318e5478294234e2aa96b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1417637340330785042, guid: 0071951014318e5478294234e2aa96b0, type: 3}
+    - {fileID: 4262418605540733613, guid: 0071951014318e5478294234e2aa96b0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0071951014318e5478294234e2aa96b0, type: 3}
 --- !u!4 &516446170020946488 stripped
 Transform:
@@ -856,8 +868,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crash_Crate_0
       objectReference: {fileID: 0}
+    - target: {fileID: 9065924571364506927, guid: d22404bbc14524845b77fe1548c3aa4c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1417637340330785042, guid: d22404bbc14524845b77fe1548c3aa4c, type: 3}
+    - {fileID: 4262418605540733613, guid: d22404bbc14524845b77fe1548c3aa4c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d22404bbc14524845b77fe1548c3aa4c, type: 3}
 --- !u!4 &4844144856470921350 stripped
 Transform:
@@ -1091,8 +1109,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crash_Crate_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9065924571364506927, guid: 8654b98aa3eb31f429efda783ab47db1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1417637340330785042, guid: 8654b98aa3eb31f429efda783ab47db1, type: 3}
+    - {fileID: 4262418605540733613, guid: 8654b98aa3eb31f429efda783ab47db1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8654b98aa3eb31f429efda783ab47db1, type: 3}
 --- !u!4 &9097064596563974077 stripped
 Transform:
@@ -1326,8 +1350,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crash_Crate_1
       objectReference: {fileID: 0}
+    - target: {fileID: 9065924571364506927, guid: 8654b98aa3eb31f429efda783ab47db1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1417637340330785042, guid: 8654b98aa3eb31f429efda783ab47db1, type: 3}
+    - {fileID: 4262418605540733613, guid: 8654b98aa3eb31f429efda783ab47db1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8654b98aa3eb31f429efda783ab47db1, type: 3}
 --- !u!4 &8876086891515862636 stripped
 Transform:
@@ -1476,8 +1506,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crash_Crate_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9065924571364506927, guid: 0071951014318e5478294234e2aa96b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1417637340330785042, guid: 0071951014318e5478294234e2aa96b0, type: 3}
+    - {fileID: 4262418605540733613, guid: 0071951014318e5478294234e2aa96b0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0071951014318e5478294234e2aa96b0, type: 3}
 --- !u!4 &7200299860391075795 stripped
 Transform:

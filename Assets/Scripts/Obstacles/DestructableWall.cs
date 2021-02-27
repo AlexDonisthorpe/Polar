@@ -10,6 +10,10 @@ namespace Polar.Obstacles
 
         [SerializeField] float boxExplosionForce = 500f;
 
+        // For some reason getComponentInParent isn't finding the parent object
+        // No time to debug :(
+        [SerializeField] GameObject parent;
+
         private void Awake()
         {
             _boxes = GetComponentsInChildren<CrashCrate>();
@@ -26,7 +30,7 @@ namespace Polar.Obstacles
                 }
 
                 GetComponent<BoxCollider>().enabled = false;
-                GetComponentInParent<BoxCollider>().enabled = false;
+                parent.GetComponent<BoxCollider>().enabled = false;
             }
 
         }

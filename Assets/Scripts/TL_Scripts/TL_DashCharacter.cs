@@ -8,6 +8,7 @@ public class TL_DashCharacter : MonoBehaviour
     private float DashCooldown = 0.15f;
     private int DashLayer = 3;
     private int ShoulderTackleLayer = 6;
+    private int PlayerLayer = 9;
     private bool IsDashButtonPressed;
     private Rigidbody CharacterRigidbody;
     private TL_SwapAbilities SwapAbilitiesScript;
@@ -34,7 +35,7 @@ public class TL_DashCharacter : MonoBehaviour
             yield return new WaitForSeconds(DashCooldown);
 
             //Revert the player's layer into default
-            gameObject.layer = 0;
+            gameObject.layer = PlayerLayer;
 
             //Reset the character's velocity
             CharacterRigidbody.velocity = Vector3.zero;
