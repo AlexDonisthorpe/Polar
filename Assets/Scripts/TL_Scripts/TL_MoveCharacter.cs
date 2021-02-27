@@ -5,13 +5,16 @@ public class TL_MoveCharacter : MonoBehaviour
     public float Speed;
     private float RotationSpeed = 0.15f;
     private Rigidbody CharacterRigidbody;
-
+    private TL_AnimationFiniteStateMachine AnimationScript;
     Vector3 PlayerMovement = Vector3.zero;
         
 
     void Awake()
     {
         CharacterRigidbody = GetComponent<Rigidbody>();
+
+        //Obtain the animation FSM script
+        AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
     }
 
     // Moving some movement code into update for use /during/ lateupdate.
@@ -33,6 +36,9 @@ public class TL_MoveCharacter : MonoBehaviour
         //If the player moves the character
         if (xAxisInput > 0 || xAxisInput < 0 || zAxisInput > 0 || zAxisInput < 0)
         {
+            //Set the new state for the character
+            AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Move);
+
             //Make the character face towards the direction they are moving in
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(PlayerMovement), RotationSpeed);
         }

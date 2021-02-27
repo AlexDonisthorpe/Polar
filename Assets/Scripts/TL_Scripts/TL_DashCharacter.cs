@@ -8,14 +8,17 @@ public class TL_DashCharacter : MonoBehaviour
     private float DashCooldown = 0.15f;
     private int DashLayer = 3;
     private int ShoulderTackleLayer = 6;
-    private int PlayerLayer = 9;
     private bool IsDashButtonPressed;
     private Rigidbody CharacterRigidbody;
     private TL_SwapAbilities SwapAbilitiesScript;
+    private TL_AnimationFiniteStateMachine AnimationScript;
 
 
     void Start()
     {
+        //Obtain the animation FSM script
+        AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
+
         SwapAbilitiesScript = GetComponent<TL_SwapAbilities>();
         CharacterRigidbody = GetComponent<Rigidbody>();
     }
@@ -35,7 +38,7 @@ public class TL_DashCharacter : MonoBehaviour
             yield return new WaitForSeconds(DashCooldown);
 
             //Revert the player's layer into default
-            gameObject.layer = PlayerLayer;
+            gameObject.layer = 0;
 
             //Reset the character's velocity
             CharacterRigidbody.velocity = Vector3.zero;
@@ -51,6 +54,9 @@ public class TL_DashCharacter : MonoBehaviour
         //If the toggle is true
         if (SwapAbilitiesScript.AbilityToggle)
         {
+            //Set the new state for the character
+            AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.ShoulderTackle);
+
             //Set the properties of the shoulder tackle
             DashForce = 5f;
             DashLayer = ShoulderTackleLayer;
@@ -58,6 +64,9 @@ public class TL_DashCharacter : MonoBehaviour
         }
         else
         {
+            //Set the new state for the character
+            AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Dash);
+
             //Set the properties of the dash
             DashForce = 10f;
             DashLayer = 3;

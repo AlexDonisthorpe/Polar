@@ -3,11 +3,15 @@ using UnityEngine;
 public class TL_ThrowObjects : MonoBehaviour
 {    
     private TL_GrabObjects GrabObjectsScript;
+    private TL_AnimationFiniteStateMachine AnimationScript;
 
 
     void Start()
     {
         GrabObjectsScript = GetComponent<TL_GrabObjects>();
+
+        //Obtain the animation FSM script
+        AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
     }
 
     //Throws the picked up object
@@ -16,6 +20,9 @@ public class TL_ThrowObjects : MonoBehaviour
         //If the throw button is pressed while the character is holding an object
         if (Input.GetKeyDown(KeyCode.T) && GrabObjectsScript.ReturnPickedUpObject() != null)
         {
+            //Set the new state for the character
+            AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Throw);
+
             //Obtain the rigidbody from the picked up object
             Rigidbody ObjectRigidbody = GrabObjectsScript.ReturnPickedUpObject().GetComponent<Rigidbody>();
 
