@@ -24,7 +24,10 @@ public class TL_JumpCharacter : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && IsCharacterTouchingTheGround())
         {
             //Add force to the Y position
-            CharacterRigidbody.AddForce(Vector3.up * JumpHeight, ForceMode.Impulse);
+            CharacterRigidbody.velocity = Vector3.up * JumpHeight;
+
+            // Swappy Addforce to .velocity to solve the apparently random jumpheight bug,
+            // sorry! ~ Alex
         }
     }
 
