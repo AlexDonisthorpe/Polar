@@ -112,11 +112,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 4053668533974990387, guid: 21d84b35560c9494a99066c706ec3a8e, type: 3}
   WaypointIndex: 0
-  PlatformSpeed: 2
+  PlatformSpeed: 3
   Waypoints:
   - {x: 10, y: 4.75, z: 18.08}
-  - {x: -7, y: 4.75, z: 4.75}
-  PlatformDirection: {x: 1, y: 1, z: 1}
+  - {x: -7, y: 4.75, z: 18.08}
+  PlatformDirection: {x: 1, y: 0, z: 0}
 --- !u!54 &5973330936978011507
 Rigidbody:
   m_ObjectHideFlags: 0
