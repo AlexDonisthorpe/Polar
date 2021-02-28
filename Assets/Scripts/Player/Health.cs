@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Polar.UI;
 
 namespace Polar.Player
 {
@@ -50,7 +51,7 @@ namespace Polar.Player
         private void GameOver()
         {
             // Add game over logic here - probably want to make a level controller to handle the gameover/timer stuff
-            Debug.Log("GAME OVER");
+            FindObjectOfType<LevelController>().LoadGameOverCanvas();
         }
     }
 }

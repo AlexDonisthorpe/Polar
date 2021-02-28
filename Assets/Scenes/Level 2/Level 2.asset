@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level 2
   m_EditorClassIdentifier: 
   sceneId: 2
-  levelDescription: Test your newfound skills! Can you smash and jump to victory?!
+  levelDescription: Some of this equipment needs some serious maintenance!
   levelScreenshot: {fileID: 21300000, guid: c1f3d831ce092b94cb655c4d5e6aa9c7, type: 3}

@@ -9,8 +9,8 @@ namespace Polar.UI
     public class LevelController : MonoBehaviour
     {
         [SerializeField] Button nextLevelButton;
-        [SerializeField] Button menuButton;
         [SerializeField] GameObject youWinCanvas;
+        [SerializeField] GameObject gameOverCanvas;
 
         private Animator _animator;
         int currentSceneIndex;
@@ -32,12 +32,18 @@ namespace Polar.UI
             }
 
         }
-
+        
         public void LoadNextLevel()
         {
             Time.timeScale = 1;
             var nextLevelIndex = currentSceneIndex + 1;
             SceneManager.LoadScene(nextLevelIndex);
+        }
+
+        public void ReloadLevel()
+        {
+            Time.timeScale = 1;
+            SceneManager.LoadScene(currentSceneIndex);
         }
 
         public void ReturnToMenu()
@@ -49,6 +55,11 @@ namespace Polar.UI
         public void LoadYouWinCanvas()
         {
             youWinCanvas.SetActive(true);
+        }
+
+        public void LoadGameOverCanvas()
+        {
+            gameOverCanvas.SetActive(true);
         }
 
     }

@@ -58,7 +58,7 @@ public class TL_DashCharacter : MonoBehaviour
             //AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.ShoulderTackle);
 
             //Set the properties of the shoulder tackle
-            DashForce = 5f;
+            DashForce = 3f;
             DashLayer = ShoulderTackleLayer;
             ShoulderTackleDamage = 5f;
         }

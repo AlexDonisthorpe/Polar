@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7caad564939617942923b0edf00dd3c3, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  sceneId: 0
-  levelDescription: 
-  levelScreenshot: {fileID: 0}
+  sceneId: 1
+  levelDescription: Try out some of your new moves! Oh...and watch your step!
+  levelScreenshot: {fileID: 21300000, guid: b09ca3a3079198645a67b247faed7c0f, type: 3}
