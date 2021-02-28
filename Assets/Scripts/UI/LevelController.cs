@@ -22,15 +22,7 @@ namespace Polar.UI
 
         private void Start()
         {
-            int totalScenes = SceneManager.sceneCountInBuildSettings;
             currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-
-            if (currentSceneIndex == totalScenes-1)
-            {
-                nextLevelButton.gameObject.SetActive(false);
-            }
-
         }
         
         public void LoadNextLevel()
@@ -60,6 +52,19 @@ namespace Polar.UI
         public void LoadGameOverCanvas()
         {
             gameOverCanvas.SetActive(true);
+        }
+
+        public bool DoesNextLevelExist()
+        {
+            int totalScenes = SceneManager.sceneCountInBuildSettings;
+
+            if (currentSceneIndex == totalScenes - 1)
+            {
+                return false;
+            } else
+            {
+                return true;
+            }
         }
 
     }

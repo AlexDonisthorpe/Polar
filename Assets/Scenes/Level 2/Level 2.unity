@@ -242,6 +242,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8495905686290997531, guid: 15b8736765d4d4440b7c049fbee90dba,
+        type: 3}
+      propertyPath: nextLevelButton
+      value: 
+      objectReference: {fileID: 1269081203}
+    - target: {fileID: 8495905686290997533, guid: 15b8736765d4d4440b7c049fbee90dba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961006788352529182, guid: 15b8736765d4d4440b7c049fbee90dba,
+        type: 3}
+      propertyPath: nextLevelButton
+      value: 
+      objectReference: {fileID: 1269081203}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15b8736765d4d4440b7c049fbee90dba, type: 3}
 --- !u!1001 &5453581
@@ -4586,6 +4601,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243912806}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1269081203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1287487328148596258, guid: 15b8736765d4d4440b7c049fbee90dba,
+    type: 3}
+  m_PrefabInstance: {fileID: 3272956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1272660380
 PrefabInstance:
   m_ObjectHideFlags: 0
