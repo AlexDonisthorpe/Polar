@@ -7,7 +7,7 @@ public class TL_GrabObjects : MonoBehaviour
 	private Animator CharacterAnimator;
 
 
-    void Start()
+	void Start()
     {
 		CharacterAnimator = GetComponent<Animator>();
 	}
@@ -69,10 +69,10 @@ public class TL_GrabObjects : MonoBehaviour
 	void PickUpObject()
 	{
 		//Assigns a Vector3 variable with a TransformDirection of Vector3.forward for the raycast
-		Vector3 ForwardDirection = transform.TransformDirection(Vector3.forward * 2f);
+		Vector3 ForwardDirection = transform.TransformDirection(Vector3.forward);
 
 		//Creates a ray in front of the PC
-		Ray Raycast = new Ray(new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z), ForwardDirection);
+		Ray Raycast = new Ray(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), ForwardDirection);
 
 		//Raycast hit variable for checking collision with the ray
 		RaycastHit RayHitOutput;
@@ -99,7 +99,7 @@ public class TL_GrabObjects : MonoBehaviour
 				RayHitOutput.rigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
 
 				//Sets local position
-				RayHitOutput.transform.localPosition = new Vector3(0f, 1.7f, 0f);
+				RayHitOutput.transform.localPosition = new Vector3(0f, 2.5f, 0f);
 
 				//Sets local rotation
 				RayHitOutput.transform.localRotation = new Quaternion(0, 0, 0, 0);
