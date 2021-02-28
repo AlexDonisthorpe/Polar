@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7caad564939617942923b0edf00dd3c3, type: 3}
   m_Name: Level 3
   m_EditorClassIdentifier: 
-  sceneId: 0
-  levelDescription: 
-  levelScreenshot: {fileID: 0}
+  sceneId: 3
+  levelDescription: '"Our Programmer designed this one after programming our UI.
+    (We gave you extra lives)" - The Team'
+  levelScreenshot: {fileID: 21300000, guid: e53d9bd33e116ac42bd55bd45bd7509a, type: 3}
