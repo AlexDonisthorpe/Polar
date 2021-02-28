@@ -79,7 +79,8 @@ public class TL_DashCharacter : MonoBehaviour
     {
         //If the dash button is pressed then set it to a bool
         if (Input.GetKeyDown(KeyCode.LeftShift) && !IsDashButtonPressed)
-        {
+        {   
+            AkSoundEngine.PostEvent("Dash", gameObject);
             UpdateDashProperties();
             IsDashButtonPressed = true;
         }

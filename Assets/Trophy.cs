@@ -7,6 +7,11 @@ namespace Polar.Core
     {
         private void OnTriggerEnter(Collider other)
         {
+            
+            
+            
+            AkSoundEngine.PostEvent("Win", gameObject);
+    
             FindObjectOfType<LevelController>().LoadYouWinCanvas();
         }
     }

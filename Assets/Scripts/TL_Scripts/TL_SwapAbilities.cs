@@ -16,6 +16,20 @@ public class TL_SwapAbilities : MonoBehaviour
             AbilityToggle = !AbilityToggle;
             GrabObjectScript.enabled = AbilityToggle;
             ThrowObjectScript.enabled = AbilityToggle;
+
+            if (AbilityToggle)
+            {
+                AkSoundEngine.SetSwitch("Dash", "Girl", gameObject);
+                 AkSoundEngine.SetSwitch("MUSIC", "GIRL", gameObject);
+                 AkSoundEngine.SetSwitch("Jump", "Girl", gameObject);
+            } else
+            {
+                AkSoundEngine.SetSwitch("Dash", "Guy", gameObject);
+                 AkSoundEngine.SetSwitch("MUSIC", "GUY", gameObject);
+                 AkSoundEngine.SetSwitch("Jump", "Guy", gameObject);
+            }
+            
+          
         }
     }
 

@@ -29,7 +29,7 @@ public class TL_JumpCharacter : MonoBehaviour
         {
             //Set the new state for the character
             //AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Jump);
-
+            AkSoundEngine.PostEvent("Jump", gameObject);
             //Add force to the Y position
             CharacterRigidbody.velocity = Vector3.up * JumpHeight;
 
