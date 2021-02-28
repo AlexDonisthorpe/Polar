@@ -8,7 +8,7 @@ public class TL_GrabObjects : MonoBehaviour
     [SerializeField] private GameObject storedObject = null;
 
 
-    void Start()
+	void Start()
     {
 		CharacterAnimator = GetComponent<Animator>();
 	}
@@ -69,6 +69,7 @@ public class TL_GrabObjects : MonoBehaviour
 	//Pick up an object
 	void PickUpObject()
 	{
+<<<<<<< HEAD
         //When the raycast hits the Pickup object
         if (storedObject != null)
         {
@@ -77,6 +78,13 @@ public class TL_GrabObjects : MonoBehaviour
 
             //Switch the toggle on
             GrabToggle = true;
+=======
+		//Assigns a Vector3 variable with a TransformDirection of Vector3.forward for the raycast
+		Vector3 ForwardDirection = transform.TransformDirection(Vector3.forward);
+
+		//Creates a ray in front of the PC
+		Ray Raycast = new Ray(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), ForwardDirection);
+>>>>>>> a84f3b75d8e5eb19583afa482c98edab7f8a02ea
 
             //Set the picked up object as the collided raycast object
             PickedUpObject = storedObject;
@@ -90,10 +98,24 @@ public class TL_GrabObjects : MonoBehaviour
             //Sets local position
             PickedUpObject.transform.localPosition = new Vector3(0f, 1.7f, 0f);
 
+<<<<<<< HEAD
             //Sets local rotation
             PickedUpObject.transform.localRotation = new Quaternion(0, 0, 0, 0);
         }
     }
+=======
+				//Freezes all positions and rotations
+				RayHitOutput.rigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+
+				//Sets local position
+				RayHitOutput.transform.localPosition = new Vector3(0f, 2.5f, 0f);
+
+				//Sets local rotation
+				RayHitOutput.transform.localRotation = new Quaternion(0, 0, 0, 0);
+			}
+		}
+	}
+>>>>>>> a84f3b75d8e5eb19583afa482c98edab7f8a02ea
 
 	//Drop the object in front of the player
 	void DropObject()
