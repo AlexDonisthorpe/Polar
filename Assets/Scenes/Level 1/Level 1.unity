@@ -6737,6 +6737,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 491720271}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1321995424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321995423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a33c1e98d6e5284892ebb8bf2ad93e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovingAnimation: {fileID: 0}
+  JumpingAnimation: {fileID: 0}
+  DashingAnimation: {fileID: 0}
+  ShoulderTackleAnimation: {fileID: 0}
+  GrabbingAnimation: {fileID: 0}
+  ThrowingAnimation: {fileID: 0}
+  DefaultState: 0
 --- !u!114 &1321995439
 MonoBehaviour:
   m_ObjectHideFlags: 0

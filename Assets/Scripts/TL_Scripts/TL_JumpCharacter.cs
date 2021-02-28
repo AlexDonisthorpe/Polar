@@ -19,7 +19,7 @@ public class TL_JumpCharacter : MonoBehaviour
         DistanceToGround = CharacterCollider.bounds.extents.y;
 
         //Obtain the animation FSM script
-        AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
+        //AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
     }
 
     void Jump()
@@ -28,7 +28,7 @@ public class TL_JumpCharacter : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && IsCharacterTouchingTheGround())
         {
             //Set the new state for the character
-            AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Jump);
+            //AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Jump);
 
             //Add force to the Y position
             CharacterRigidbody.velocity = Vector3.up * JumpHeight;

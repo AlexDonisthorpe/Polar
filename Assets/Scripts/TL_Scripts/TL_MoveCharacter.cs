@@ -14,7 +14,7 @@ public class TL_MoveCharacter : MonoBehaviour
         CharacterRigidbody = GetComponent<Rigidbody>();
 
         //Obtain the animation FSM script
-        AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
+        //AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
     }
 
     // Moving some movement code into update for use /during/ lateupdate.
@@ -37,7 +37,7 @@ public class TL_MoveCharacter : MonoBehaviour
         if (xAxisInput > 0 || xAxisInput < 0 || zAxisInput > 0 || zAxisInput < 0)
         {
             //Set the new state for the character
-            AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Move);
+            //AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Move);
 
             //Make the character face towards the direction they are moving in
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(PlayerMovement), RotationSpeed);
