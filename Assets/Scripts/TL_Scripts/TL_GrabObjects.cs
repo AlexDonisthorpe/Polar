@@ -4,13 +4,12 @@ public class TL_GrabObjects : MonoBehaviour
 {
 	public bool GrabToggle;
 	public GameObject PickedUpObject;
-	private TL_AnimationFiniteStateMachine AnimationScript;
+	private Animator CharacterAnimator;
 
 
-    void Start()
+	void Start()
     {
-		//Obtain the animation FSM script
-		AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
+		CharacterAnimator = GetComponent<Animator>();
 	}
 
     //Returns the child gameobject tagged as pickup
@@ -70,10 +69,10 @@ public class TL_GrabObjects : MonoBehaviour
 	void PickUpObject()
 	{
 		//Assigns a Vector3 variable with a TransformDirection of Vector3.forward for the raycast
-		Vector3 ForwardDirection = transform.TransformDirection(Vector3.forward * 2f);
+		Vector3 ForwardDirection = transform.TransformDirection(Vector3.forward);
 
 		//Creates a ray in front of the PC
-		Ray Raycast = new Ray(new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z), ForwardDirection);
+		Ray Raycast = new Ray(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), ForwardDirection);
 
 		//Raycast hit variable for checking collision with the ray
 		RaycastHit RayHitOutput;
@@ -84,8 +83,8 @@ public class TL_GrabObjects : MonoBehaviour
 			//When the raycast hits the Pickup object
 			if (RayHitOutput.transform.gameObject.CompareTag("Pickup"))
 			{
-				//Set the new state for the character
-				AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Grab);
+				//Set the trigger to true
+				CharacterAnimator.SetBool("IsGrabbing", true);
 
 				//Switch the toggle on
 				GrabToggle = true;
@@ -100,7 +99,7 @@ public class TL_GrabObjects : MonoBehaviour
 				RayHitOutput.rigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
 
 				//Sets local position
-				RayHitOutput.transform.localPosition = new Vector3(0f, 1.7f, 0f);
+				RayHitOutput.transform.localPosition = new Vector3(0f, 2.5f, 0f);
 
 				//Sets local rotation
 				RayHitOutput.transform.localRotation = new Quaternion(0, 0, 0, 0);
@@ -114,6 +113,9 @@ public class TL_GrabObjects : MonoBehaviour
 		//If the player still has the picked up object
 		if (GrabToggle && ReturnPickedUpObject() != null)
 		{
+			//Set the trigger to false
+			CharacterAnimator.SetBool("IsGrabbing", false);
+
 			//Drop the object in front of the character
 			ReturnPickedUpObject().transform.position += transform.forward;
 

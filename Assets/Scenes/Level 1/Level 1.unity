@@ -11594,6 +11594,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15b8736765d4d4440b7c049fbee90dba, type: 3}
+--- !u!1001 &7155949218830153055
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 49.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 51.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 119.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224456, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155949220122224459, guid: 105891a5e3d20144b9622ac5d02a13d8,
+        type: 3}
+      propertyPath: m_Name
+      value: Snow
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 105891a5e3d20144b9622ac5d02a13d8, type: 3}
 --- !u!114 &8356975823614071828
 MonoBehaviour:
   m_ObjectHideFlags: 0

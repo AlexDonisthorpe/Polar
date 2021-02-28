@@ -9,18 +9,17 @@ public class TL_DashCharacter : MonoBehaviour
     private int DashLayer = 3;
     private int ShoulderTackleLayer = 6;
     private bool IsDashButtonPressed;
+    private string TriggerName;
+    private Animator CharacterAnimator;
     private Rigidbody CharacterRigidbody;
     private TL_SwapAbilities SwapAbilitiesScript;
-    private TL_AnimationFiniteStateMachine AnimationScript;
 
 
     void Start()
     {
-        //Obtain the animation FSM script
-        //AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
-
-        SwapAbilitiesScript = GetComponent<TL_SwapAbilities>();
+        CharacterAnimator = GetComponent<Animator>();
         CharacterRigidbody = GetComponent<Rigidbody>();
+        SwapAbilitiesScript = GetComponent<TL_SwapAbilities>();
     }
 
     //Creates a burst of speed for the character and adds a cooldown inbetween dashes
@@ -28,6 +27,9 @@ public class TL_DashCharacter : MonoBehaviour
     {
         if (IsDashButtonPressed)
         {
+            //Set the trigger to true
+            CharacterAnimator.SetBool(TriggerName, true);
+
             //Add a burst of forward speed to the character
             CharacterRigidbody.AddForce(transform.forward * DashForce, ForceMode.Impulse);
 
@@ -38,13 +40,16 @@ public class TL_DashCharacter : MonoBehaviour
             yield return new WaitForSeconds(DashCooldown);
 
             //Revert the player's layer into default
-            gameObject.layer = 9;
+            gameObject.layer = 0;
 
             //Reset the character's velocity
             CharacterRigidbody.velocity = Vector3.zero;
 
             //Set the bool to false
             IsDashButtonPressed = false;
+
+            //Set the trigger to true
+            CharacterAnimator.SetBool(TriggerName, false);
         }
     }
 
@@ -54,20 +59,16 @@ public class TL_DashCharacter : MonoBehaviour
         //If the toggle is true
         if (SwapAbilitiesScript.AbilityToggle)
         {
-            //Set the new state for the character
-            //AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.ShoulderTackle);
-
             //Set the properties of the shoulder tackle
-            DashForce = 3f;
+            TriggerName = "IsShoulderTackling";
+            DashForce = 5f;
             DashLayer = ShoulderTackleLayer;
             ShoulderTackleDamage = 5f;
         }
         else
         {
-            //Set the new state for the character
-            //AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Dash);
-
             //Set the properties of the dash
+            TriggerName = "IsDashing";
             DashForce = 10f;
             DashLayer = 3;
             ShoulderTackleDamage = 0f;
