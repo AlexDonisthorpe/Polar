@@ -799,6 +799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51218b8016a5fb4428d53d2d5539ddfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevelButton: {fileID: 0}
 --- !u!1 &2855656190607160055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,6 +2060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51218b8016a5fb4428d53d2d5539ddfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevelButton: {fileID: 1287487328148596258}
 --- !u!1 &8817254567496141770
 GameObject:
   m_ObjectHideFlags: 0

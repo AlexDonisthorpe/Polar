@@ -19,6 +19,10 @@ namespace Polar.UI
             {
                 nextLevelButton.SetActive(true);
             }
+            else
+            {
+                nextLevelButton.SetActive(false);
+            }
             Time.timeScale = 0;
         }
     }
