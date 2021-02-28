@@ -6,17 +6,20 @@ public class TL_DashCharacter : MonoBehaviour
     public float ShoulderTackleDamage;
     public float DashForce;
     private float DashCooldown = 0.15f;
+    public int NumberOfDashes = 1;
     private int DashLayer = 3;
     private int ShoulderTackleLayer = 6;
     private bool IsDashButtonPressed;
     private string TriggerName;
     private Animator CharacterAnimator;
     private Rigidbody CharacterRigidbody;
+    private TL_JumpCharacter JumpingScript;
     private TL_SwapAbilities SwapAbilitiesScript;
 
 
     void Start()
     {
+        JumpingScript = GetComponent<TL_JumpCharacter>();
         CharacterAnimator = GetComponent<Animator>();
         CharacterRigidbody = GetComponent<Rigidbody>();
         SwapAbilitiesScript = GetComponent<TL_SwapAbilities>();
@@ -25,7 +28,8 @@ public class TL_DashCharacter : MonoBehaviour
     //Creates a burst of speed for the character and adds a cooldown inbetween dashes
     IEnumerator Dash()
     {
-        if (IsDashButtonPressed)
+        //If the dash button is press and the number of dashes is more than 0
+        if (IsDashButtonPressed && NumberOfDashes > 0)
         {
             //Set the trigger to true
             CharacterAnimator.SetBool(TriggerName, true);
@@ -39,6 +43,13 @@ public class TL_DashCharacter : MonoBehaviour
             //Wait for a few seconds
             yield return new WaitForSeconds(DashCooldown);
 
+            //If the character is not touching the ground while airborne
+            if (!JumpingScript.IsCharacterTouchingTheGround())
+            {
+                //Reduce the number of dashes to 0
+                NumberOfDashes = 0;
+            }
+
             //Revert the player's layer into default
             gameObject.layer = 0;
 
@@ -48,7 +59,7 @@ public class TL_DashCharacter : MonoBehaviour
             //Set the bool to false
             IsDashButtonPressed = false;
 
-            //Set the trigger to true
+            //Set the trigger to false
             CharacterAnimator.SetBool(TriggerName, false);
         }
     }
@@ -87,8 +98,19 @@ public class TL_DashCharacter : MonoBehaviour
         }
     }
 
+    void UpdateNumberOfDashes()
+    {
+        //If the character is touching the ground
+        if (JumpingScript.IsCharacterTouchingTheGround())
+        {
+            //Set number of dashes to 1
+            NumberOfDashes = 1;
+        }
+    }
+
     void Update()
     {
+        UpdateNumberOfDashes();
         DashButton();
     }
 
