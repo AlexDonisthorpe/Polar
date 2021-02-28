@@ -5,6 +5,7 @@ public class TL_GrabObjects : MonoBehaviour
 	public bool GrabToggle;
 	public GameObject PickedUpObject;
 	private Animator CharacterAnimator;
+    [SerializeField] private GameObject storedObject = null;
 
 
     void Start()
@@ -68,44 +69,31 @@ public class TL_GrabObjects : MonoBehaviour
 	//Pick up an object
 	void PickUpObject()
 	{
-		//Assigns a Vector3 variable with a TransformDirection of Vector3.forward for the raycast
-		Vector3 ForwardDirection = transform.TransformDirection(Vector3.forward * 2f);
+        //When the raycast hits the Pickup object
+        if (storedObject != null)
+        {
+            //Set the trigger to true
+            CharacterAnimator.SetBool("IsGrabbing", true);
 
-		//Creates a ray in front of the PC
-		Ray Raycast = new Ray(new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z), ForwardDirection);
+            //Switch the toggle on
+            GrabToggle = true;
 
-		//Raycast hit variable for checking collision with the ray
-		RaycastHit RayHitOutput;
+            //Set the picked up object as the collided raycast object
+            PickedUpObject = storedObject;
 
-		//If the ratcast hits an object that can be picked up
-		if (Physics.Raycast(Raycast, out RayHitOutput, 2f))
-		{
-			//When the raycast hits the Pickup object
-			if (RayHitOutput.transform.gameObject.CompareTag("Pickup"))
-			{
-				//Set the trigger to true
-				CharacterAnimator.SetBool("IsGrabbing", true);
+            //Adds the object touched by the raycast to the parent transform
+            PickedUpObject.transform.SetParent(transform);
 
-				//Switch the toggle on
-				GrabToggle = true;
+            //Freezes all positions and rotations
+            PickedUpObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
 
-				//Set the picked up object as the collided raycast object
-				PickedUpObject = RayHitOutput.transform.gameObject;
+            //Sets local position
+            PickedUpObject.transform.localPosition = new Vector3(0f, 1.7f, 0f);
 
-				//Adds the object touched by the raycast to the parent transform
-				RayHitOutput.transform.SetParent(transform);
-
-				//Freezes all positions and rotations
-				RayHitOutput.rigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
-
-				//Sets local position
-				RayHitOutput.transform.localPosition = new Vector3(0f, 1.7f, 0f);
-
-				//Sets local rotation
-				RayHitOutput.transform.localRotation = new Quaternion(0, 0, 0, 0);
-			}
-		}
-	}
+            //Sets local rotation
+            PickedUpObject.transform.localRotation = new Quaternion(0, 0, 0, 0);
+        }
+    }
 
 	//Drop the object in front of the player
 	void DropObject()
@@ -140,5 +128,21 @@ public class TL_GrabObjects : MonoBehaviour
     {
 		GrabObjectToggle();
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Pickup"))
+        {
+            storedObject = other.gameObject;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Pickup"))
+        {
+            storedObject = null;
+        }
+    }
 
 }

@@ -8,6 +8,8 @@ public class TL_JumpCharacter : MonoBehaviour
     private Rigidbody CharacterRigidbody;
     private Animator CharacterAnimator;
 
+    //bodging this, with the inclusion of the new model, the raycast to ground isn't working
+    private bool isTouchingTheGround = true;
 
     void Start()
     {
@@ -24,8 +26,9 @@ public class TL_JumpCharacter : MonoBehaviour
     void Jump()
     {
         //If the player presses the jmup button and if the character is touching the ground
-        if (Input.GetKey(KeyCode.Space) && IsCharacterTouchingTheGround())
+        if (Input.GetKeyDown(KeyCode.Space) && isTouchingTheGround)
         {
+            isTouchingTheGround = false;
             //Set the trigger to true
             CharacterAnimator.SetBool("IsJumping", true);
 
@@ -45,12 +48,17 @@ public class TL_JumpCharacter : MonoBehaviour
     //Checks if the character is touching the ground or not
     bool IsCharacterTouchingTheGround()
     {
-        return Physics.Raycast(transform.position, -Vector3.up, DistanceToGround + 0.1f);
+        return isTouchingTheGround;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         Jump();
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        isTouchingTheGround = true;
     }
 
 }

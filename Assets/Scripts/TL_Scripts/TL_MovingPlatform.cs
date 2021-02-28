@@ -1,11 +1,12 @@
 using UnityEngine;
+using Polar.Obstacles;
 
 public class TL_MovingPlatform : MonoBehaviour
 {
     public GameObject Player;
-    public int WaypointIndex;
+    public int WaypointIndex = 0;
     public float PlatformSpeed;
-    public Vector3[] Waypoints;
+    public Waymark[] Waypoints;
     public Vector3 PlatformDirection;
     private Rigidbody PlayerRigidbody;
     private Rigidbody PlatformRigidbody;
@@ -19,22 +20,24 @@ public class TL_MovingPlatform : MonoBehaviour
     //Make the platform follow a waypoint
     void FollowWaypoint()
     {
+        var waypointPosition = Waypoints[WaypointIndex].transform.position;
+
         //Calculate the direction of the next waypoint
-        PlatformDirection = Waypoints[WaypointIndex] - transform.position;
+        PlatformDirection = waypointPosition - transform.position;
 
         //If the platform is close enough to its' destination
-        if (Vector3.Distance(transform.position, Waypoints[WaypointIndex]) < 1f)
+        if (Vector3.Distance(transform.position, waypointPosition) < 1f)
         {
             //Increase the index
-            WaypointIndex++;  
-            
+            WaypointIndex++;
+
             //If the index of the waypoint is more than the maximum length of the array
             if (WaypointIndex > Waypoints.Length - 1)
             {
                 //Reset the index
                 WaypointIndex = 0;
             }
-        }        
+        }
     }
 
     //Move and rotate the platform

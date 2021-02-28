@@ -17,6 +17,11 @@ namespace Polar.UI
             SceneManager.LoadScene(1);
         }
 
+        private void Start()
+        {
+            //Play music here
+        }
+
         public void LoadControlScreen()
         {
             _mainMenu.SetActive(false);

@@ -25,7 +25,7 @@ public class TL_ThrowObjects : MonoBehaviour
             Rigidbody ObjectRigidbody = GrabObjectsScript.ReturnPickedUpObject().GetComponent<Rigidbody>();
 
             //Add the force to throw the object
-            ObjectRigidbody.AddForce(transform.forward * 500f);
+            ObjectRigidbody.AddForce(transform.forward * 1500f);
 
             //Reset the values of the picked up object
             GrabObjectsScript.ResetObjetProperties(GrabObjectsScript.ReturnPickedUpObject());

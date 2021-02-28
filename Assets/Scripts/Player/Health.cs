@@ -42,7 +42,7 @@ namespace Polar.Player
 
         public void SetNewCheckpoint(Transform checkpointTransform)
         {
-            Vector3 newPosition = new Vector3(checkpointTransform.position.x, checkpointTransform.position.y + 1, checkpointTransform.position.z);
+            Vector3 newPosition = new Vector3(checkpointTransform.position.x, checkpointTransform.position.y + 2, checkpointTransform.position.z);
 
             _respawnPosition = newPosition;
             _respawnRotation = checkpointTransform.rotation;

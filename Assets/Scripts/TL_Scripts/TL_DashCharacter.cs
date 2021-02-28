@@ -40,7 +40,7 @@ public class TL_DashCharacter : MonoBehaviour
             yield return new WaitForSeconds(DashCooldown);
 
             //Revert the player's layer into default
-            gameObject.layer = 0;
+            gameObject.layer = 9;
 
             //Reset the character's velocity
             CharacterRigidbody.velocity = Vector3.zero;
