@@ -4,13 +4,13 @@ public class TL_GrabObjects : MonoBehaviour
 {
 	public bool GrabToggle;
 	public GameObject PickedUpObject;
-	private TL_AnimationFiniteStateMachine AnimationScript;
+	//private TL_AnimationFiniteStateMachine AnimationScript;
 
 
     void Start()
     {
 		//Obtain the animation FSM script
-		AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
+		//AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
 	}
 
     //Returns the child gameobject tagged as pickup
@@ -85,7 +85,7 @@ public class TL_GrabObjects : MonoBehaviour
 			if (RayHitOutput.transform.gameObject.CompareTag("Pickup"))
 			{
 				//Set the new state for the character
-				AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Grab);
+				//AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Grab);
 
 				//Switch the toggle on
 				GrabToggle = true;
