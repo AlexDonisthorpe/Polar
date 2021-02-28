@@ -23,7 +23,7 @@ namespace Polar.Obstacles
         {
 
            if (other.CompareTag("Player"))
-           {
+           {    AkSoundEngine.PostEvent("Destroy", this.gameObject);
                 foreach (var box in _boxes)
                 {
                     box.BlowUp(boxExplosionForce);

@@ -25,12 +25,16 @@ namespace Polar.Player
             playerLives--;
 
             if(playerLives <= 0)
-            {
+            {   AkSoundEngine.PostEvent("STOP", gameObject);
                 GameOver();
+                AkSoundEngine.PostEvent("DEAD", gameObject);
+                
+
             }
             else
             {
                 Respawn();
+                
             }
         }
 

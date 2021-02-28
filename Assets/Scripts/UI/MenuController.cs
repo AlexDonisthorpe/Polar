@@ -12,9 +12,15 @@ namespace Polar.UI
 
         public void LoadFirstLevel()
         {
+             
             // Assuming the first level is the 2nd scene
             // (first scene being the menu)
             SceneManager.LoadScene(1);
+        }
+        public void Start()
+        {
+           AkSoundEngine.PostEvent("MUSIC", gameObject);
+           
         }
 
         private void Start()

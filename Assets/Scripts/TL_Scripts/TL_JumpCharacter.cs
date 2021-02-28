@@ -46,7 +46,7 @@ public class TL_JumpCharacter : MonoBehaviour
     }
 
     //Checks if the character is touching the ground or not
-    bool IsCharacterTouchingTheGround()
+    public bool IsCharacterTouchingTheGround()
     {
         return isTouchingTheGround;
     }
