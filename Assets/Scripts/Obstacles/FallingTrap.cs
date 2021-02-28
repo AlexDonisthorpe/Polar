@@ -28,18 +28,19 @@ namespace Polar.Obstacles
                     StartCoroutine("TriggerTrap");
                 }
             }
-
-            if(doesRespawn)
-            {
-                StartCoroutine("Respawn");
-            }
-            
         }
 
         private IEnumerator TriggerTrap()
         {
             yield return new WaitForSeconds(fallDelay);
             _spawnedDebris = Instantiate(debris, transform.position, Quaternion.identity);
+            _spawnedDebris.transform.localScale = transform.localScale;
+            StartCoroutine("CleanupDebris");
+
+            if (doesRespawn)
+            {
+                StartCoroutine("Respawn");
+            }
         }
 
         private IEnumerator CleanupDebris()

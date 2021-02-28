@@ -10,6 +10,7 @@ namespace Polar.Obstacles
         private Rigidbody _rigidbody;
         private MeshRenderer _meshRenderer;
         private Quaternion _startingRotation;
+        private Animator _animator;
 
         [SerializeField] float fallDelay = 2f;
         [SerializeField] float disappearDelay = 2f;
@@ -23,8 +24,9 @@ namespace Polar.Obstacles
             //Caching...
             _startingPosition = transform.position;
             _rigidbody = GetComponent<Rigidbody>();
-            _meshRenderer = GetComponent<MeshRenderer>();
+            _meshRenderer = GetComponentInChildren<MeshRenderer>();
             _startingRotation = transform.rotation;
+            _animator = GetComponent<Animator>();
         }
 
         private void Start()
@@ -57,12 +59,14 @@ namespace Polar.Obstacles
             transform.rotation = _startingRotation;
             _meshRenderer.enabled = true;
             _rigidbody.isKinematic = true;
+            _animator.SetTrigger("Respawned");
         }
 
-        private void OnCollisionEnter(Collision collision)
+        private void OnTriggerEnter(Collider other)
         {
-            if (collision.gameObject.CompareTag("Player"))
+            if (other.CompareTag("Player"))
             {
+                _animator.SetTrigger("Falling");
                 StartCoroutine("StartFalling");
             }
         }

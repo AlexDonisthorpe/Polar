@@ -1,11 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Polar.UI;
 
-public class Trophy : MonoBehaviour
+namespace Polar.Core
 {
-    private void OnTriggerEnter(Collider other)
+    public class Trophy : MonoBehaviour
     {
-        FindObjectOfType<LevelController>().LoadYouWinCanvas();       
+        private void OnTriggerEnter(Collider other)
+        {
+            FindObjectOfType<LevelController>().LoadYouWinCanvas();
+        }
     }
 }

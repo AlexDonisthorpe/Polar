@@ -18,9 +18,9 @@ namespace Polar.Obstacles
             _animator = GetComponent<Animator>();
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void OnCollisionEnter(Collision collision)
         {
-            if (!hasTriggered && other.CompareTag("Player"))
+            if (!hasTriggered && collision.gameObject.CompareTag("Player"))
             {
                 StartCoroutine("WaitToTrigger");
             }
