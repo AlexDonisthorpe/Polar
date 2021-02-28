@@ -4,13 +4,12 @@ public class TL_GrabObjects : MonoBehaviour
 {
 	public bool GrabToggle;
 	public GameObject PickedUpObject;
-	//private TL_AnimationFiniteStateMachine AnimationScript;
+	private Animator CharacterAnimator;
 
 
     void Start()
     {
-		//Obtain the animation FSM script
-		//AnimationScript = GetComponent<TL_AnimationFiniteStateMachine>();
+		CharacterAnimator = GetComponent<Animator>();
 	}
 
     //Returns the child gameobject tagged as pickup
@@ -84,8 +83,8 @@ public class TL_GrabObjects : MonoBehaviour
 			//When the raycast hits the Pickup object
 			if (RayHitOutput.transform.gameObject.CompareTag("Pickup"))
 			{
-				//Set the new state for the character
-				//AnimationScript.SetNewState(TL_AnimationFiniteStateMachine.CharacterState.Grab);
+				//Set the trigger to true
+				CharacterAnimator.SetBool("IsGrabbing", true);
 
 				//Switch the toggle on
 				GrabToggle = true;
@@ -114,6 +113,9 @@ public class TL_GrabObjects : MonoBehaviour
 		//If the player still has the picked up object
 		if (GrabToggle && ReturnPickedUpObject() != null)
 		{
+			//Set the trigger to false
+			CharacterAnimator.SetBool("IsGrabbing", false);
+
 			//Drop the object in front of the character
 			ReturnPickedUpObject().transform.position += transform.forward;
 
