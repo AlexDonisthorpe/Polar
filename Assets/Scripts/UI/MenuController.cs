@@ -23,11 +23,6 @@ namespace Polar.UI
            
         }
 
-        private void Start()
-        {
-            //Play music here
-        }
-
         public void LoadControlScreen()
         {
             _mainMenu.SetActive(false);
