@@ -66,6 +66,7 @@ namespace Polar.Obstacles
         {
             if (other.CompareTag("Player"))
             {
+                AkSoundEngine.PostEvent("Fallingangel", gameObject);
                 _animator.SetTrigger("Falling");
                 StartCoroutine("StartFalling");
             }

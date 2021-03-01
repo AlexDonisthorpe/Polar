@@ -20,6 +20,7 @@
         {
             if(testing && !hasExploded)
             {
+                AkSoundEngine.PostEvent("Destroy", this.gameObject);
                 BlowUp(500);
                 hasExploded = true;
             }

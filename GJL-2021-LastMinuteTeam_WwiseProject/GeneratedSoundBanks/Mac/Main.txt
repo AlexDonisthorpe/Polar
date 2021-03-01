@@ -1,0 +1,60 @@
+Event	ID	Name			Wwise Object Path	Notes
+	788884573	STOP			\Default Work Unit\STOP	
+	979765101	Win			\Default Work Unit\Win	
+	1126985124	Motor			\Default Work Unit\Motor	
+	1189848415	DashSwitchMan			\Default Work Unit\DashSwitchMan	
+	1942692385	Dash			\Default Work Unit\Dash	
+	2044049779	DEAD			\Default Work Unit\DEAD	
+	2953019946	Barrier			\Default Work Unit\Barrier	
+	3037085244	MUSICGIRL			\Default Work Unit\MUSICGIRL	
+	3222595431	MUSICGUY			\Default Work Unit\MUSICGUY	
+	3222976667	DashSwitchgirl			\Default Work Unit\DashSwitchgirl	
+	3250089732	Electric			\Default Work Unit\Electric	
+	3449161034	JumpSwitchGuy			\Default Work Unit\JumpSwitchGuy	
+	3570620693	Fallingangel			\Default Work Unit\Fallingangel	
+	3833651337	Jump			\Default Work Unit\Jump	
+	3936390293	Destroy			\Default Work Unit\Destroy	
+	3966727683	JumpSwitchgirl			\Default Work Unit\JumpSwitchgirl	
+	3991942870	MUSIC			\Default Work Unit\MUSIC	
+	4035573696	Platform			\Default Work Unit\Platform	
+	4082046343	MUSICMENU			\Default Work Unit\MUSICMENU	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1942692385	Dash			\Default Work Unit\Dash	
+	3833651337	Jump			\Default Work Unit\Jump	
+
+Switch	ID	Name	Switch Group			Notes
+	751535327	Girl	Dash			
+	915214430	Guy	Dash			
+	751535327	Girl	Jump			
+	915214430	Guy	Jump			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	MUSIC			\Default Work Unit\MUSIC	
+
+State	ID	Name	State Group			Notes
+	748895195	None	MUSIC			
+	751535327	GIRL	MUSIC			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	27198655	Falling	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ABK2_FX_Fall_Bones_D1B537C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Falling		303100
+	37243751	New Sound SFX	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ESM_Mobile_Game_One_Shot_Action_Power_Dash_2_F26EB66E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\DashGuy1\New Sound SFX		78228
+	68502903	DEAD	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\DL_Dead_FXHits_E12600C7.wem		\Actor-Mixer Hierarchy\Default Work Unit\DEAD		777456
+	201635018	ESM_Pirate_Vocal_One_Shot_Jumping_Rahh_Jump	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ESM_Pirate_Vocal_One_Shot_Jumping_Rahh_Jump_1443113F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\askd\ESM_Pirate_Vocal_One_Shot_Jumping_Rahh_Jump		26016
+	228623013	BRS_Impact_Cardboard_Box_Med_04	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\BRS_Impact_Wood_Skid_Flam_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destry\Destroy\BRS_Impact_Cardboard_Box_Med_04		327744
+	285699879	New Sound SFX	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ESM_Mobile_Game_One_Shot_Action_Power_Dash_2_767B79EE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\DashGirl\New Sound SFX		98936
+	322667963	Dashguy	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ESM_Mobile_Game_One_Shot_Action_Power_Dash_1_79119606.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\DashGirl\Dashguy		92520
+	365247192	FF_RW_bamboo_snap_sounds_like_a_clave_layer	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\FF_RW_bamboo_snap_sounds_like_a_clave_layer_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Winnning\FF_RW_bamboo_snap_sounds_like_a_clave_layer		103336
+	419153910	Snowtheme	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\Snowtheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MENU\Snowtheme\Snowtheme		31449668
+	454080542	BRS_Impact_Cardboard_Box_Med_01	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\BRS_Impact_Cardboard_Box_Med_04_00542EE5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destry\Destroy\BRS_Impact_Cardboard_Box_Med_01		284768
+	474785853	Dashguy	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ESM_Mobile_Game_One_Shot_Action_Power_Dash_1_6BA9D7C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash\DashGuy1\Dashguy		99228
+	553733099	BRS_Impact_Metal_Dryer_Thump	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\BRS_Impact_Metal_Dryer_Thump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destry\Destroy\BRS_Impact_Metal_Dryer_Thump		344128
+	582077048	Lights	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ESM_Electricity_Hum_3_Sci_fi_Robotic_Robot_Cyber_Futuristic_Energy_Machine_Drone_687C3B0C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lights		2966096
+	617921196	ESM_Correct_Jewel_Sound_11_Sound_FX_Arcade_Casino_Kids_Mobile_App_Positive_Achievement_Win	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ESM_Correct_Jewel_Sound_11_Sound_FX_Arcade_Casino_Kids_Mobile_App_Positive_Achievement_Win_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Winnning\ESM_Correct_Jewel_Sound_11_Sound_FX_Arcade_Casino_Kids_Mobile_App_Positive_Achievement_Win		147312
+	632618892	ESM_Ninja_Jump_1_Airy_Whoosh_Pass_By	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ESM_Ninja_Jump_1_Airy_Whoosh_Pass_By_D7D06DF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\askd\ESM_Ninja_Jump_1_Airy_Whoosh_Pass_By		43516
+	821136364	TS_MAMMOTH_cinema_tom_one_shot_dist_tom_3_impact	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\TS_MAMMOTH_cinema_tom_one_shot_dist_tom_3_impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destry\Destroy\TS_MAMMOTH_cinema_tom_one_shot_dist_tom_3_impact		540688
+	877557466	moving platform	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\RU_ADA_Lofi_Spring_Cloud_C_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\moving platform		3175264
+	881359151	Motors	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\SPLC-0815_FX-Loop-Propeller-Flying-Fortress-Prop-Plane_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Motors		20645952
+	996166987	ESM_Pirate_Vocal_One_Shot_Jumping_Rahh_Jump	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\ESM_Pirate_Vocal_One_Shot_Jumping_Rahh_Jump_5925D1C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Girl\ESM_Pirate_Vocal_One_Shot_Jumping_Rahh_Jump		32776
+	1046567085	X10_BDT_fx_portal	Y:\Documents\GitHub\GJL-2021-LastMinuteTeam\GJL-2021-LastMinuteTeam_WwiseProject\.cache\Mac\SFX\X10_BDT_fx_portal_8DB98ACB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Barriers\X10_BDT_fx_portal		45740
+
