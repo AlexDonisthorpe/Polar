@@ -468,6 +468,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585870506042266786
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /GJL-2021-LastMinuteTeam_WwiseProject
+  - /GJL-2021-LastMinuteTeam_WwiseProject/Events
+  - /GJL-2021-LastMinuteTeam_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
