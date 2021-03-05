@@ -70,4 +70,12 @@ public class TL_MovingPlatform : MonoBehaviour
         }
     }
 
+    private void OnCollisionExit(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            PlayerRigidbody.velocity = new Vector3(0, PlayerRigidbody.velocity.y, 0);
+        }
+    }
+
 }
