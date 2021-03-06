@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class TL_JumpCharacter : MonoBehaviour
@@ -9,7 +10,11 @@ public class TL_JumpCharacter : MonoBehaviour
     private Animator CharacterAnimator;
 
     [SerializeField] private int _jumpCounter = 0;
+    [SerializeField] private float landingCheckDistance = 2f;
+
     private bool readyToJump;
+    [SerializeField] private bool isJumping;
+
 
     void Start()
     {
@@ -30,35 +35,25 @@ public class TL_JumpCharacter : MonoBehaviour
         {
             // Nested ifs because c# isn't short-ciruiting my conditional with the function inside the first if?
             // ~ Alex
+
             if(IsCharacterTouchingTheGround())
             {
                 if(_jumpCounter == 0)
                 {
                     _jumpCounter++;
                     readyToJump = true;
+                    CharacterAnimator.SetTrigger("IsJumping");
+                    isJumping = true;
 
                 }
 
             }
-
-            //Add force to the Y position
-
-            // Swappy Addforce to .velocity to solve the apparently random jumpheight bug,
-            // sorry! ~ Alex
-        }
-        else
-        {
-            //Set the trigger to false
-            CharacterAnimator.SetBool("IsJumping", false);
         }
     }
 
     //Checks if the character is touching the ground or not
     public bool IsCharacterTouchingTheGround()
     {
-
-        var foo = Physics.CheckCapsule(CharacterCollider.bounds.center, new Vector3(CharacterCollider.bounds.center.x, CharacterCollider.bounds.max.y - 0.5f, CharacterCollider.bounds.center.z), CharacterCollider.bounds.max.x, 3);
-        // Debug.Log(foo);
         return Physics.Raycast(transform.position, Vector3.down, CharacterCollider.bounds.extents.y + 0.1f);
     }
 
@@ -66,6 +61,7 @@ public class TL_JumpCharacter : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Ground"))
         {
+            isJumping = false;
             _jumpCounter = 0;
         }
     }
@@ -85,13 +81,16 @@ public class TL_JumpCharacter : MonoBehaviour
             CharacterRigidbody.velocity = Vector3.zero;
             CharacterRigidbody.velocity = new Vector3(0f, JumpHeight, 0f);
             readyToJump = false;
-
         }
     }
 
     private void Update()
     {
         Jump();
-    }
+        if (CharacterRigidbody.velocity.y < -2.5)
+        {
+            CharacterAnimator.SetTrigger("IsLanding");
+        }
 
+    }
 }
