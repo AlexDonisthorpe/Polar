@@ -15,6 +15,7 @@ namespace Polar.UI
         // Yes, you read that right.
         public void Freeze()
         {
+            if (nextLevelButton == null) return;
             if(nextLevelExists)
             {
                 nextLevelButton.SetActive(true);
