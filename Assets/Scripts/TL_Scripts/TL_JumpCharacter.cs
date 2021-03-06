@@ -28,6 +28,8 @@ public class TL_JumpCharacter : MonoBehaviour
         //If the player presses the jmup button and if the character is touching the ground
         if (Input.GetKeyDown(KeyCode.Space) && isTouchingTheGround)
         {
+            //Audio Call
+            AkSoundEngine.PostEvent("JUMP", gameObject);
             isTouchingTheGround = false;
             //Set the trigger to true
             CharacterAnimator.SetBool("IsJumping", true);

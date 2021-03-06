@@ -10,7 +10,7 @@ namespace Polar.Core
             
             
             
-            //AkSoundEngine.PostEvent("Win", this.gameObject);
+            AkSoundEngine.PostEvent("Win", gameObject);
     
             FindObjectOfType<LevelController>().LoadYouWinCanvas();
         }

@@ -25,9 +25,9 @@ namespace Polar.Player
             playerLives--;
 
             if(playerLives <= 0)
-            {   AkSoundEngine.PostEvent("STOP", gameObject);
+            {  
                 GameOver();
-                AkSoundEngine.PostEvent("DEAD", gameObject);
+                
                 
 
             }
@@ -54,6 +54,7 @@ namespace Polar.Player
 
         private void GameOver()
         {
+            AkSoundEngine.PostEvent("DEAD", gameObject);
             // Add game over logic here - probably want to make a level controller to handle the gameover/timer stuff
             FindObjectOfType<LevelController>().LoadGameOverCanvas();
         }
