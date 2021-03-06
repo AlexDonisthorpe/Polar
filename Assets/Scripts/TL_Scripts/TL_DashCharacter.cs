@@ -71,7 +71,7 @@ public class TL_DashCharacter : MonoBehaviour
         if (SwapAbilitiesScript.AbilityToggle)
         {
             //Set the properties of the shoulder tackle
-            TriggerName = "IsShoulderTackling";
+            TriggerName = "IsBarging";
             DashForce = 5f;
             DashLayer = ShoulderTackleLayer;
             ShoulderTackleDamage = 5f;

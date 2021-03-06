@@ -87,7 +87,7 @@ public class TL_JumpCharacter : MonoBehaviour
     private void Update()
     {
         Jump();
-        if (CharacterRigidbody.velocity.y < -2.5)
+        if (CharacterRigidbody.velocity.y < -3.5)
         {
             CharacterAnimator.SetTrigger("IsLanding");
         }
