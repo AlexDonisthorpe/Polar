@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>/Users/dillanhoyos/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GJL-2021-LastMinuteTeam_WwiseProjssect/</ProjectRoot>
+		<SourceFilesRoot>/Users/dillanhoyos/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GJL-2021-LastMinuteTeam_WwiseProjssect/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/dillanhoyos/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GJL-2021-LastMinuteTeam_WwiseProjssect/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/dillanhoyos/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GJL-2021-LastMinuteTeam_WwiseProjssect/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="724984533">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="2294208740">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2953019946" Name="Barrier" ObjectPath="\Events\Default Work Unit\Barrier" DurationType="OneShot" DurationMin="0.121424" DurationMax="0.211412">
+					<IncludedMemoryFiles>
+						<File Id="1046567085" Language="SFX">
+							<ShortName>X10_BDT_fx_portal.wav</ShortName>
+							<Path>SFX/X10_BDT_fx_portal_8DB98ACB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Dash" DurationType="OneShot" DurationMin="0.225433" DurationMax="0.632580">
+					<IncludedMemoryFiles>
+						<File Id="37243751" Language="SFX">
+							<ShortName>ESM_Mobile_Game_One_Shot_Action_Power_Dash_2.wav</ShortName>
+							<Path>SFX/ESM_Mobile_Game_One_Shot_Action_Power_Dash_2_F26EB66E.wem</Path>
+						</File>
+						<File Id="285699879" Language="SFX">
+							<ShortName>ESM_Mobile_Game_One_Shot_Action_Power_Dash_2.wav</ShortName>
+							<Path>SFX/ESM_Mobile_Game_One_Shot_Action_Power_Dash_2_767B79EE.wem</Path>
+						</File>
+						<File Id="322667963" Language="SFX">
+							<ShortName>ESM_Mobile_Game_One_Shot_Action_Power_Dash_1.wav</ShortName>
+							<Path>SFX/ESM_Mobile_Game_One_Shot_Action_Power_Dash_1_79119606.wem</Path>
+						</File>
+						<File Id="474785853" Language="SFX">
+							<ShortName>ESM_Mobile_Game_One_Shot_Action_Power_Dash_1.wav</ShortName>
+							<Path>SFX/ESM_Mobile_Game_One_Shot_Action_Power_Dash_1_6BA9D7C3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{B1AE858C-5C19-46AD-9042-6024BFA3AF08}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{B1AE858C-5C19-46AD-9042-6024BFA3AF08}">
+							<Media>
+								<File Id="37243751"/>
+								<File Id="474785853"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{FFFEE3BC-4CCD-4C5B-B7DA-2422530380A1}">
+							<Media>
+								<File Id="285699879"/>
+								<File Id="322667963"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3222976667" Name="DashSwitchgirl" ObjectPath="\Events\Default Work Unit\DashSwitchgirl" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="751535327" Name="Girl" ObjectPath="\Switches\Default Work Unit\Dash\Girl"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1189848415" Name="DashSwitchMan" ObjectPath="\Events\Default Work Unit\DashSwitchMan" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="915214430" Name="Guy" ObjectPath="\Switches\Default Work Unit\Dash\Guy"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="2044049779" Name="DEAD" ObjectPath="\Events\Default Work Unit\DEAD" DurationType="OneShot" DurationMin="4.048916" DurationMax="4.048916">
+					<IncludedMemoryFiles>
+						<File Id="68502903" Language="SFX">
+							<ShortName>DL_Dead_FXHits.wav</ShortName>
+							<Path>SFX/DL_Dead_FXHits_E12600C7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3936390293" Name="Destroy" ObjectPath="\Events\Default Work Unit\Destroy" DurationType="OneShot" DurationMin="2.240694" DurationMax="5.184153">
+					<IncludedMemoryFiles>
+						<File Id="228623013" Language="SFX">
+							<ShortName>BRS_Impact_Wood_Skid_Flam_4.wav</ShortName>
+							<Path>SFX/BRS_Impact_Wood_Skid_Flam_4_10C4C929.wem</Path>
+						</File>
+						<File Id="454080542" Language="SFX">
+							<ShortName>BRS_Impact_Cardboard_Box_Med_04.wav</ShortName>
+							<Path>SFX/BRS_Impact_Cardboard_Box_Med_04_00542EE5.wem</Path>
+						</File>
+						<File Id="553733099" Language="SFX">
+							<ShortName>BRS_Impact_Metal_Dryer_Thump.wav</ShortName>
+							<Path>SFX/BRS_Impact_Metal_Dryer_Thump_10C4C929.wem</Path>
+						</File>
+						<File Id="821136364" Language="SFX">
+							<ShortName>TS_MAMMOTH_cinema_tom_one_shot_dist_tom_3_impact.wav</ShortName>
+							<Path>SFX/TS_MAMMOTH_cinema_tom_one_shot_dist_tom_3_impact_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3250089732" Name="Electric" ObjectPath="\Events\Default Work Unit\Electric" MaxAttenuation="16.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="582077048" Language="SFX">
+							<ShortName>ESM_Electricity_Hum_3_Sci_fi_Robotic_Robot_Cyber_Futuristic_Energy_Machine_Drone.wav</ShortName>
+							<Path>SFX/ESM_Electricity_Hum_3_Sci_fi_Robotic_Robot_Cyber_Futuristic_Energy_Machine_Drone_687C3B0C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3570620693" Name="Fallingangel" ObjectPath="\Events\Default Work Unit\Fallingangel" DurationType="OneShot" DurationMin="1.550926" DurationMax="1.821083">
+					<IncludedMemoryFiles>
+						<File Id="27198655" Language="SFX">
+							<ShortName>ABK2_FX_Fall_Bones.wav</ShortName>
+							<Path>SFX/ABK2_FX_Fall_Bones_D1B537C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Jump" DurationType="OneShot" DurationMin="0.386699" DurationMax="0.475612">
+					<IncludedMemoryFiles>
+						<File Id="722159412" Language="SFX">
+							<ShortName>ESM_Retro_Game_Pulseing_Item_Loop_2_Arcade_80s_Simple_Alert_Notification_Coin_Touch_Classic.wav</ShortName>
+							<Path>SFX/ESM_Retro_Game_Pulseing_Item_Loop_2_Arcade_80s_Simple_Alert_Notification_Coin_Touch_Classic_1C1BC479.wem</Path>
+						</File>
+						<File Id="1063780650" Language="SFX">
+							<ShortName>ESM_Retro_Game_Pulseing_Item_Loop_2_Arcade_80s_Simple_Alert_Notification_Coin_Touch_Classic.wav</ShortName>
+							<Path>SFX/ESM_Retro_Game_Pulseing_Item_Loop_2_Arcade_80s_Simple_Alert_Notification_Coin_Touch_Classic_C7CDC8FF.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{9FBB4F37-0B76-41F1-BC22-A4EA689CBF6E}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{9FBB4F37-0B76-41F1-BC22-A4EA689CBF6E}">
+							<Media>
+								<File Id="1063780650"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C60B3F62-34AD-4C0C-8500-E951974B10AD}">
+							<Media>
+								<File Id="722159412"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3966727683" Name="JumpSwitchgirl" ObjectPath="\Events\Default Work Unit\JumpSwitchgirl" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="751535327" Name="Girl" ObjectPath="\Switches\Default Work Unit\Jump\Girl"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="3449161034" Name="JumpSwitchGuy" ObjectPath="\Events\Default Work Unit\JumpSwitchGuy" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="915214430" Name="Guy" ObjectPath="\Switches\Default Work Unit\Jump\Guy"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1126985124" Name="Motor" ObjectPath="\Events\Default Work Unit\Motor" MaxAttenuation="21.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="881359151" Language="SFX">
+							<ShortName>SPLC-0815_FX-Loop-Propeller-Flying-Fortress-Prop-Plane.wav</ShortName>
+							<Path>SFX/SPLC-0815_FX-Loop-Propeller-Flying-Fortress-Prop-Plane_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3991942870" Name="MUSIC" ObjectPath="\Events\Default Work Unit\MUSIC" DurationType="OneShot" DurationMin="5449.523926" DurationMax="5449.523926">
+					<IncludedMemoryFiles>
+						<File Id="419153910" Language="SFX">
+							<ShortName>Snowtheme.wav</ShortName>
+							<Path>SFX/Snowtheme_D79FB2B7.wem</Path>
+						</File>
+						<File Id="498610134" Language="SFX">
+							<ShortName>CIty Girl Lo Fi beat.wav</ShortName>
+							<Path>SFX/CIty Girl Lo Fi beat_D79FB2B7.wem</Path>
+						</File>
+						<File Id="917818912" Language="SFX">
+							<ShortName>Cyberpunk ambiance.wav</ShortName>
+							<Path>SFX/Cyberpunk ambiance_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3037085244" Name="MUSICGIRL" ObjectPath="\Events\Default Work Unit\MUSICGIRL" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="751535327" Name="GIRL" ObjectPath="\Switches\Default Work Unit\MUSIC\GIRL"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="3222595431" Name="MUSICGUY" ObjectPath="\Events\Default Work Unit\MUSICGUY" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="915214430" Name="GUY" ObjectPath="\Switches\Default Work Unit\MUSIC\GUY"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="4082046343" Name="MUSICMENU" ObjectPath="\Events\Default Work Unit\MUSICMENU" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="2607556080" Name="MENU" ObjectPath="\Switches\Default Work Unit\MUSIC\MENU"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="4035573696" Name="Platform" ObjectPath="\Events\Default Work Unit\Platform" MaxAttenuation="21.000000" DurationType="OneShot" DurationMin="18.000000" DurationMax="18.000000">
+					<IncludedMemoryFiles>
+						<File Id="877557466" Language="SFX">
+							<ShortName>RU_ADA_Lofi_Spring_Cloud_C.wav</ShortName>
+							<Path>SFX/RU_ADA_Lofi_Spring_Cloud_C_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="788884573" Name="STOP" ObjectPath="\Events\Default Work Unit\STOP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="979765101" Name="Win" ObjectPath="\Events\Default Work Unit\Win" DurationType="OneShot" DurationMin="0.834739" DurationMax="0.834739">
+					<IncludedMemoryFiles>
+						<File Id="617921196" Language="SFX">
+							<ShortName>ESM_Correct_Jewel_Sound_11_Sound_FX_Arcade_Casino_Kids_Mobile_App_Positive_Achievement_Win.wav</ShortName>
+							<Path>SFX/ESM_Correct_Jewel_Sound_11_Sound_FX_Arcade_Casino_Kids_Mobile_App_Positive_Achievement_Win_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="751535327" Name="Girl" ObjectPath="\Switches\Default Work Unit\Dash\Girl">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="915214430" Name="Guy" ObjectPath="\Switches\Default Work Unit\Dash\Guy">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="1942692385" Name="Dash" ObjectPath="\Switches\Default Work Unit\Dash">
+					<Switches>
+						<Switch Id="751535327" Name="Girl" ObjectPath="\Switches\Default Work Unit\Dash\Girl"/>
+						<Switch Id="915214430" Name="Guy" ObjectPath="\Switches\Default Work Unit\Dash\Guy"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2607556080" Name="MENU" ObjectPath="\Switches\Default Work Unit\MUSIC\MENU">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="3833651337" Name="Jump" ObjectPath="\Switches\Default Work Unit\Jump">
+					<Switches>
+						<Switch Id="751535327" Name="Girl" ObjectPath="\Switches\Default Work Unit\Jump\Girl"/>
+						<Switch Id="915214430" Name="Guy" ObjectPath="\Switches\Default Work Unit\Jump\Guy"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

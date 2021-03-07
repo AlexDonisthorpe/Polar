@@ -28,5 +28,3 @@ namespace Polar.UI
         }
     }
 }
-
-
