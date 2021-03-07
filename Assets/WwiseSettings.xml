@@ -10,5 +10,5 @@
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac>/Volumes/Dillan hoyos/UNITY/Wwise1/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../../../../Desktop/GJL-2021-LastMinuteTeam_WwiseProjssect/GJL-2021-LastMinuteTeam_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../GJL-2021-LastMinuteTeam_WwiseProjssect/GJL-2021-LastMinuteTeam_WwiseProject.wproj</WwiseProjectPath>
 </WwiseSettings>
