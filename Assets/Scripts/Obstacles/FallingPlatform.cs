@@ -69,6 +69,12 @@ namespace Polar.Obstacles
                 AkSoundEngine.PostEvent("Fallingangel", gameObject);
                 _animator.SetTrigger("Falling");
                 StartCoroutine("StartFalling");
+
+                var collidedWithJump = other.gameObject.GetComponent<TL_JumpCharacter>();
+                if(collidedWithJump != null)
+                {
+                    collidedWithJump.ResetJump();
+                }
             }
         }
 

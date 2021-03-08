@@ -70,17 +70,19 @@ public class TL_JumpCharacter : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isJumping = false;
-            _jumpCounter = 0;
+            ResetJump();
         }
+    }
+
+    public void ResetJump()
+    {
+        isJumping = false;
+        _jumpCounter = 0;
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Ground"))
-        {
-            _jumpCounter++;
-        }
+        ResetJump();
     }
 
     void FixedUpdate()
