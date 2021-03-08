@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Arms
+  m_Mask: 00000000010000000100000000000000000000000100000001000000000000000000000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Hip
+    m_Weight: 0
+  - m_Path: Hip/Belly
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade/L_Shoulder
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade/L_Shoulder/L_Elbow
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade/L_Shoulder/L_Elbow/L_Wrist
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade/L_Shoulder/L_Elbow/L_Wrist/L_Fingers_base
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade/L_Shoulder/L_Elbow/L_Wrist/L_Fingers_base/L_Fingers_Middle
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade/L_Shoulder/L_Elbow/L_Wrist/L_Fingers_base/L_Fingers_Middle/L_Fingers_Tip
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Base
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Base/L_Thumb_Middle
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/L_Shoudler_Blade/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Base/L_Thumb_Middle/L_Thumb_Tip
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/Neck
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/Neck/Head
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/Neck/Head/Head_Tip
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade/R_Shoulder
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade/R_Shoulder/R_Elbow
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade/R_Shoulder/R_Elbow/R_Wrist
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade/R_Shoulder/R_Elbow/R_Wrist/R_Fingers_base
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade/R_Shoulder/R_Elbow/R_Wrist/R_Fingers_base/R_Fingers_Middle
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade/R_Shoulder/R_Elbow/R_Wrist/R_Fingers_base/R_Fingers_Middle/R_Fingers_Tip
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade/R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Base
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade/R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Base/R_Thumb_Middle
+    m_Weight: 1
+  - m_Path: Hip/Belly/Stomach/Chest/R_Shoudler_Blade/R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Base/R_Thumb_Middle/R_Thumb_Tip
+    m_Weight: 1
+  - m_Path: Hip/L_Thigh
+    m_Weight: 0
+  - m_Path: Hip/L_Thigh/L_Knee
+    m_Weight: 0
+  - m_Path: Hip/L_Thigh/L_Knee/L_Ankle
+    m_Weight: 0
+  - m_Path: Hip/L_Thigh/L_Knee/L_Ankle/L_Foot
+    m_Weight: 0
+  - m_Path: Hip/R_Thigh
+    m_Weight: 0
+  - m_Path: Hip/R_Thigh/R_Knee
+    m_Weight: 0
+  - m_Path: Hip/R_Thigh/R_Knee/R_Ankle
+    m_Weight: 0
+  - m_Path: Hip/R_Thigh/R_Knee/R_Ankle/R_Foot
+    m_Weight: 0
+  - m_Path: Master_CTL
+    m_Weight: 0
+  - m_Path: Master_CTL/Hip_GRP
+    m_Weight: 0
+  - m_Path: Master_CTL/Hip_GRP/Hip_CTL
+    m_Weight: 0
+  - m_Path: Polar_Rig
+    m_Weight: 0
