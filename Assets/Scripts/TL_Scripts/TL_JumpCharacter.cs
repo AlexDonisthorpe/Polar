@@ -54,12 +54,21 @@ public class TL_JumpCharacter : MonoBehaviour
     //Checks if the character is touching the ground or not
     public bool IsCharacterTouchingTheGround()
     {
-        return Physics.Raycast(transform.position, Vector3.down, CharacterCollider.bounds.extents.y + 0.1f);
+        return Physics.Raycast(transform.position, Vector3.down, CharacterCollider.bounds.extents.y + 0.1f, 3);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isJumping = false;
+            _jumpCounter = 0;
+        }
     }
 
     private void OnCollisionStay(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isJumping = false;
             _jumpCounter = 0;
@@ -79,18 +88,25 @@ public class TL_JumpCharacter : MonoBehaviour
         if(readyToJump)
         {
             CharacterRigidbody.velocity = Vector3.zero;
-            CharacterRigidbody.velocity = new Vector3(0f, JumpHeight, 0f);
+            CharacterRigidbody.velocity = Vector3.up * JumpHeight;
             readyToJump = false;
         }
     }
 
     private void Update()
     {
-        Jump();
+        if (!IsCharacterTouchingTheGround())
+        {
+            _jumpCounter = 0;
+        }
         if (CharacterRigidbody.velocity.y < -3.5)
         {
             CharacterAnimator.SetTrigger("IsLanding");
         }
+    }
 
+    private void LateUpdate()
+    {
+        Jump();
     }
 }
