@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1877934488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1877934489}
+  - component: {fileID: 1877934490}
+  m_Layer: 9
+  m_Name: HairCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1877934489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877934488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4053668533974990383}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1877934490
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877934488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.18912563
+  m_Height: 1.3841434
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.19207168, z: 0.010874361}
 --- !u!1 &1027804334746635219
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +701,7 @@ Transform:
   - {fileID: 5313143022222314208}
   - {fileID: 3357913008877188240}
   - {fileID: 7766767033513786985}
+  - {fileID: 1877934489}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -777,6 +823,11 @@ MonoBehaviour:
   GrabObjectScript: {fileID: 1295326741}
   ThrowObjectScript: {fileID: 1295326743}
   AbilityToggle: 0
+  characterRenderer: {fileID: 1273608035}
+  blueMat: {fileID: 2100000, guid: 74bdae2d4a3a3d248aa0c9feac264302, type: 2}
+  redMat: {fileID: 2100000, guid: 35a680641197f5f4eb8ee0bbee40587c, type: 2}
+  boyHair: {fileID: 7738135663493605650}
+  girlHair: {fileID: 3909036106115089249}
 --- !u!114 &1295326743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,11 +1022,11 @@ Cloth:
   m_GameObject: {fileID: 5151378862060128800}
   m_Enabled: 1
   m_StretchingStiffness: 1
-  m_BendingStiffness: 0.5
+  m_BendingStiffness: 0.8
   m_UseTethers: 1
   m_UseGravity: 1
   m_Damping: 0.85
-  m_ExternalAcceleration: {x: 0, y: 0, z: 0}
+  m_ExternalAcceleration: {x: 0, y: -20, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
   m_WorldAccelerationScale: 1
@@ -1944,15 +1995,16 @@ Cloth:
     collisionSphereDistance: 3.4028235e+38
   - maxDistance: 1
     collisionSphereDistance: 3.4028235e+38
-  m_CapsuleColliders: []
+  m_CapsuleColliders:
+  - {fileID: 1877934490}
   m_SphereColliders: []
   m_SelfCollisionDistance: 0
   m_SelfCollisionStiffness: 0.2
   m_SelfAndInterCollisionIndices: 
   m_VirtualParticleWeights:
-  - {x: 0.33333334, y: -1, z: 0.33333334}
-  - {x: 0.33333334, y: -1, z: 0.33333334}
-  - {x: 0.33333334, y: -1, z: 0.33333334}
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: 1, z: 1}
   m_VirtualParticleIndices: 
 --- !u!1 &5305682962861072604
 GameObject:
@@ -2587,10 +2639,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GirlHair
       objectReference: {fileID: 0}
+    - target: {fileID: 7928282041294062435, guid: 8c9057e7d4c836e4cb9d2bdbe6671dd3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -81499357382630485, guid: 8c9057e7d4c836e4cb9d2bdbe6671dd3, type: 3}
     - {fileID: 4451542666872035253, guid: 8c9057e7d4c836e4cb9d2bdbe6671dd3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8c9057e7d4c836e4cb9d2bdbe6671dd3, type: 3}
+--- !u!1 &3909036106115089249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7928282041294062435, guid: 8c9057e7d4c836e4cb9d2bdbe6671dd3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6357188361766797314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1047079402023471229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6250640080623847551, guid: 8c9057e7d4c836e4cb9d2bdbe6671dd3,
@@ -2673,13 +2736,19 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ace6983a02e7184ca9c1ed3bf127502,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ace6983a02e7184ca9c1ed3bf127502, type: 3}
 --- !u!4 &6928983532226294696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1ace6983a02e7184ca9c1ed3bf127502,
+    type: 3}
+  m_PrefabInstance: {fileID: 7467540696260170819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7738135663493605650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ace6983a02e7184ca9c1ed3bf127502,
     type: 3}
   m_PrefabInstance: {fileID: 7467540696260170819}
   m_PrefabAsset: {fileID: 0}
