@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,8 @@ namespace Polar.UI
         [SerializeField] GameObject _quitCanvas;
         [SerializeField] GameObject _levelSelectScreen;
 
+        private static bool isMusicPlaying = false;
+
         public void LoadFirstLevel()
         {
              
@@ -19,8 +22,11 @@ namespace Polar.UI
         }
         public void Start()
         {
-           AkSoundEngine.PostEvent("MUSIC", gameObject);
-           
+            if(!isMusicPlaying)
+            {
+                AkSoundEngine.PostEvent("MUSIC", gameObject);
+                isMusicPlaying = true;
+            }
         }
 
         public void LoadControlScreen()
