@@ -21,9 +21,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
-      does not match position in animation file:\n\t'Stomach' : position error =
-      58.919563 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -83,235 +81,12 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human:
-    - boneName: Hip
-      humanName: Hips
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Thigh
-      humanName: LeftUpperLeg
-      limit:
-        min: {x: -60, y: -60, z: -90}
-        max: {x: 60, y: 60, z: 50}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Thigh
-      humanName: RightUpperLeg
-      limit:
-        min: {x: -60, y: -60, z: -90}
-        max: {x: 60, y: 60, z: 50}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Knee
-      humanName: LeftLowerLeg
-      limit:
-        min: {x: -90, y: 0, z: -80}
-        max: {x: 90, y: 0, z: 80}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Knee
-      humanName: RightLowerLeg
-      limit:
-        min: {x: -90, y: 0, z: -80}
-        max: {x: 90, y: 0, z: 80}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Ankle
-      humanName: LeftFoot
-      limit:
-        min: {x: 0, y: -30, z: -50}
-        max: {x: 0, y: 30, z: 50}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Ankle
-      humanName: RightFoot
-      limit:
-        min: {x: 0, y: -30, z: -50}
-        max: {x: 0, y: 30, z: 50}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Belly
-      humanName: Spine
-      limit:
-        min: {x: -40, y: -40, z: -40}
-        max: {x: 40, y: 40, z: 40}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Neck
-      humanName: Neck
-      limit:
-        min: {x: -40, y: -40, z: -40}
-        max: {x: 40, y: 40, z: 40}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Head
-      humanName: Head
-      limit:
-        min: {x: -40, y: -40, z: -40}
-        max: {x: 40, y: 40, z: 40}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Shoulder
-      humanName: LeftUpperArm
-      limit:
-        min: {x: -90, y: -100, z: -60}
-        max: {x: 90, y: 100, z: 100}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Shoulder
-      humanName: RightUpperArm
-      limit:
-        min: {x: -90, y: -100, z: -60}
-        max: {x: 90, y: 100, z: 100}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Elbow
-      humanName: LeftLowerArm
-      limit:
-        min: {x: -90, y: 0, z: -80}
-        max: {x: 90, y: 0, z: 80}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Elbow
-      humanName: RightLowerArm
-      limit:
-        min: {x: -90, y: 0, z: -80}
-        max: {x: 90, y: 0, z: 80}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Wrist
-      humanName: LeftHand
-      limit:
-        min: {x: 0, y: -40, z: -80}
-        max: {x: 0, y: 40, z: 80}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Wrist
-      humanName: RightHand
-      limit:
-        min: {x: 0, y: -40, z: -80}
-        max: {x: 0, y: 40, z: 80}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Thumb_Base
-      humanName: Left Thumb Proximal
-      limit:
-        min: {x: 0, y: -25, z: -20}
-        max: {x: 0, y: 25, z: 20}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Thumb_Middle
-      humanName: Left Thumb Intermediate
-      limit:
-        min: {x: 0, y: 0, z: -40}
-        max: {x: 0, y: 0, z: 35}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Thumb_Tip
-      humanName: Left Thumb Distal
-      limit:
-        min: {x: 0, y: 0, z: -40}
-        max: {x: 0, y: 0, z: 35}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Fingers_Middle
-      humanName: Left Middle Proximal
-      limit:
-        min: {x: 0, y: -7.5, z: -50}
-        max: {x: 0, y: 7.5, z: 50}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Fingers_Tip
-      humanName: Left Middle Intermediate
-      limit:
-        min: {x: 0, y: 0, z: -45}
-        max: {x: 0, y: 0, z: 45}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Thumb_Base
-      humanName: Right Thumb Proximal
-      limit:
-        min: {x: 0, y: -25, z: -20}
-        max: {x: 0, y: 25, z: 20}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Thumb_Middle
-      humanName: Right Thumb Intermediate
-      limit:
-        min: {x: 0, y: 0, z: -40}
-        max: {x: 0, y: 0, z: 35}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Thumb_Tip
-      humanName: Right Thumb Distal
-      limit:
-        min: {x: 0, y: 0, z: -40}
-        max: {x: 0, y: 0, z: 35}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Fingers_Middle
-      humanName: Right Middle Proximal
-      limit:
-        min: {x: 0, y: -7.5, z: -50}
-        max: {x: 0, y: 7.5, z: 50}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Fingers_Tip
-      humanName: Right Middle Intermediate
-      limit:
-        min: {x: 0, y: 0, z: -45}
-        max: {x: 0, y: 0, z: 45}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
+    human: []
     skeleton:
     - name: Polar_rig_6(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Master_CTL
-      parentName: Polar_rig_6(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Hip_GRP
-      parentName: Master_CTL
-      position: {x: -0, y: 0.79999995, z: 3.5527136e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Hip_CTL
-      parentName: Hip_GRP
-      position: {x: -0, y: 0, z: -3.5527136e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Polar_Rig
       parentName: Polar_rig_6(Clone)
@@ -336,7 +111,7 @@ ModelImporter:
     - name: L_Ankle
       parentName: L_Knee
       position: {x: -0.4134788, y: -0.004490159, z: 0.012421951}
-      rotation: {x: 0.79147154, y: 0.58920574, z: 0.1600065, w: -0.028412238}
+      rotation: {x: 0.7914716, y: 0.5892058, z: 0.16000651, w: -0.02841224}
       scale: {x: 0.9999996, y: 0.9999997, z: 0.9999996}
     - name: L_Foot
       parentName: L_Ankle
@@ -350,7 +125,7 @@ ModelImporter:
       scale: {x: 1, y: 1.0000001, z: 1.0000001}
     - name: Stomach
       parentName: Belly
-      position: {x: -0.234, y: -0.001, z: -4.453907e-17}
+      position: {x: -0.293, y: 0, z: -4.453907e-17}
       rotation: {x: 0.99991274, y: -0.013212144, z: -0, w: 0}
       scale: {x: 1.0000004, y: 1.0000004, z: 1.0000006}
     - name: Chest
@@ -406,12 +181,12 @@ ModelImporter:
     - name: L_Fingers_Tip
       parentName: L_Fingers_Middle
       position: {x: -0.06658477, y: -3.9301895e-16, z: 7.1130134e-17}
-      rotation: {x: 0.3402049, y: -0.9403514, z: -0.000000044071236, w: -0.0000000093136014}
+      rotation: {x: 0.3402049, y: -0.94035137, z: -0.000000044071236, w: -0.0000000093136014}
       scale: {x: 0.99999946, y: 0.9999992, z: 0.9999992}
     - name: L_Thumb_Base
       parentName: L_Wrist
       position: {x: -0.17890464, y: -0.008003346, z: 0.08348763}
-      rotation: {x: 0.185317, y: 0.44974676, z: -0.011425935, w: 0.8736446}
+      rotation: {x: 0.18531702, y: 0.44974676, z: -0.011425937, w: 0.8736446}
       scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: L_Thumb_Middle
       parentName: L_Thumb_Base
@@ -421,7 +196,7 @@ ModelImporter:
     - name: L_Thumb_Tip
       parentName: L_Thumb_Middle
       position: {x: -0.040107302, y: -3.4683678e-16, z: -9.554896e-18}
-      rotation: {x: -0.22026643, y: -0.4183757, z: -0.13059504, w: 0.8714296}
+      rotation: {x: -0.2202664, y: -0.4183757, z: -0.13059503, w: 0.8714296}
       scale: {x: 0.9999997, y: 1.0000001, z: 0.99999946}
     - name: R_Shoudler_Blade
       parentName: Chest
@@ -436,7 +211,7 @@ ModelImporter:
     - name: R_Elbow
       parentName: R_Shoulder
       position: {x: -0.34545803, y: 0, z: -1.04360964e-16}
-      rotation: {x: -0.019582206, y: -0.015222132, z: 0.00020757595, w: 0.9996923}
+      rotation: {x: -0.019582206, y: -0.015222133, z: 0.00020757595, w: 0.9996924}
       scale: {x: 1.0000005, y: 0.99999994, z: 1.0000007}
     - name: R_Wrist
       parentName: R_Elbow
@@ -486,13 +261,28 @@ ModelImporter:
     - name: R_Ankle
       parentName: R_Knee
       position: {x: -0.41347915, y: -0.004490174, z: 0.012421957}
-      rotation: {x: 0.77870274, y: 0.61221325, z: 0.07432057, w: -0.11529695}
+      rotation: {x: 0.77870274, y: 0.6122133, z: 0.07432057, w: -0.11529696}
       scale: {x: 1.0000002, y: 0.9999998, z: 1.0000002}
     - name: R_Foot
       parentName: R_Ankle
       position: {x: -0.23157935, y: 0.037461463, z: 0.018980158}
       rotation: {x: 0.0023998395, y: 0.013092276, z: -0.1500864, w: 0.9885833}
       scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Master_CTL
+      parentName: Polar_rig_6(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hip_GRP
+      parentName: Master_CTL
+      position: {x: -0, y: 0.79999995, z: 3.5527136e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hip_CTL
+      parentName: Hip_GRP
+      position: {x: -0, y: 0, z: -3.5527136e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.52
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -501,13 +291,13 @@ ModelImporter:
     legStretch: 0
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: 
+    rootMotionBoneName: Hip
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1

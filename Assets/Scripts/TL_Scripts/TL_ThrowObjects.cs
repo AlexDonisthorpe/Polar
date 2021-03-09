@@ -29,6 +29,13 @@ public class TL_ThrowObjects : MonoBehaviour
             //Obtain the rigidbody from the picked up object
             Rigidbody ObjectRigidbody = GrabObjectsScript.ReturnPickedUpObject().GetComponent<Rigidbody>();
 
+            var boxColliders = ObjectRigidbody.GetComponents<BoxCollider>();
+
+            foreach (var box in boxColliders)
+            {
+                box.enabled = true;
+            }
+
             //Add the force to throw the object
             ObjectRigidbody.AddForce(transform.forward * 1500f);
 
