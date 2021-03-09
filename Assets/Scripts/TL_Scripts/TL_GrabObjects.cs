@@ -8,9 +8,6 @@ public class TL_GrabObjects : MonoBehaviour
 
     // The animations aren't setup to use a humanoid rig, so IK is out.
     [SerializeField] Transform _leftHand;
-    [SerializeField] Transform _rightHand;
-    private Vector3 _leftHandOffset;
-    private Vector3 _rightHandOffset;
 
     // Animation
     private Animator CharacterAnimator;

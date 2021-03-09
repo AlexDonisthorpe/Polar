@@ -3897,6 +3897,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1295326740, guid: 21d84b35560c9494a99066c706ec3a8e, type: 3}
+      propertyPath: DashForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295326740, guid: 21d84b35560c9494a99066c706ec3a8e, type: 3}
+      propertyPath: ShoulderTackleDamage
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1295326741, guid: 21d84b35560c9494a99066c706ec3a8e, type: 3}
       propertyPath: _leftHand
       value: 

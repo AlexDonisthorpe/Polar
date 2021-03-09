@@ -57,12 +57,16 @@ public class TL_JumpCharacter : MonoBehaviour
         return Physics.Raycast(transform.position, Vector3.down, CharacterCollider.bounds.extents.y + 0.1f, 3);
     }
 
+    public int GetJumpCounter()
+    {
+        return _jumpCounter;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isJumping = false;
-            _jumpCounter = 0;
+            ResetJump();
         }
     }
 
@@ -82,7 +86,8 @@ public class TL_JumpCharacter : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        ResetJump();
+        _jumpCounter++;
+        isJumping = true;
     }
 
     void FixedUpdate()
@@ -97,7 +102,7 @@ public class TL_JumpCharacter : MonoBehaviour
 
     private void Update()
     {
-        if (!IsCharacterTouchingTheGround())
+        if (IsCharacterTouchingTheGround())
         {
             _jumpCounter = 0;
         }
