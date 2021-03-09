@@ -470,6 +470,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /GJL-2021-LastMinuteTeam_WwiseProject
+  - /GJL-2021-LastMinuteTeam_WwiseProject/Events
+  - /GJL-2021-LastMinuteTeam_WwiseProject/Events/Default Work Unit
   - /GJL-2021-LastMinuteTeam_WwiseProject/SoundBanks
   - /GJL-2021-LastMinuteTeam_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1

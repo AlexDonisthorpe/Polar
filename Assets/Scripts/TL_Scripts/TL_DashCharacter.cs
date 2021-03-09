@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class TL_DashCharacter : MonoBehaviour
 {
-    public float ShoulderTackleDamage;
+    public float BaseShoulderTackleForce;
+    public float BaseDashForce;
     public float DashForce;
     private float DashCooldown = 0.15f;
     public int NumberOfDashes = 1;
@@ -24,6 +25,8 @@ public class TL_DashCharacter : MonoBehaviour
         CharacterAnimator = GetComponent<Animator>();
         CharacterRigidbody = GetComponent<Rigidbody>();
         SwapAbilitiesScript = GetComponent<TL_SwapAbilities>();
+
+        DashForce = BaseDashForce;
     }
 
     //Creates a burst of speed for the character and adds a cooldown inbetween dashes
@@ -78,17 +81,15 @@ public class TL_DashCharacter : MonoBehaviour
         {
             //Set the properties of the shoulder tackle
             TriggerName = "IsBarging";
-            DashForce = 5f;
+            DashForce = BaseShoulderTackleForce;
             DashLayer = ShoulderTackleLayer;
-            ShoulderTackleDamage = 5f;
         }
         else
         {
             //Set the properties of the dash
             TriggerName = "IsDashing";
-            DashForce = 10f;
+            DashForce = BaseDashForce;
             DashLayer = 3;
-            ShoulderTackleDamage = 0f;
         }
     }
 
@@ -97,11 +98,10 @@ public class TL_DashCharacter : MonoBehaviour
     {
         //If the dash button is pressed then set it to a bool
         if (Input.GetKeyDown(KeyCode.LeftShift) && !IsDashButtonPressed)
-        {   
-            UpdateDashProperties();
-
+        {
             if (hasDashedInTheAir) return;
 
+            UpdateDashProperties();
             IsDashButtonPressed = true;
         }
     }
