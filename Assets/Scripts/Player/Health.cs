@@ -8,13 +8,21 @@ namespace Polar.Player
 {
     public class Health : MonoBehaviour
     {
+        [SerializeField] int maxLives = 3;
         [SerializeField] int playerLives = 3;
 
         private Vector3 _respawnPosition;
         private Quaternion _respawnRotation;
 
+        private HealthUI _healthUI;
+        
         private void Start()
         {
+            playerLives = maxLives;
+            _healthUI = FindObjectOfType<HealthUI>();
+
+            if (_healthUI == null) Debug.Log("HealthUI not found");
+            _healthUI.UpdateLives(playerLives);
             SetNewCheckpoint(transform);
         }
 
@@ -23,15 +31,15 @@ namespace Polar.Player
             //Put Dying Stuff here
             //May need to pull this out into another method later
             playerLives--;
+            _healthUI.UpdateLives(playerLives);
 
-            if(playerLives <= 0)
+            if (playerLives <= 0)
             {
                 GameOver();
             }
             else
             {
                 Respawn();
-                
             }
         }
 

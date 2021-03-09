@@ -35,6 +35,7 @@ namespace Polar.UI
         public void ReloadLevel()
         {
             Time.timeScale = 1;
+            FindObjectOfType<HealthUI>().UpdateLives(3);
             SceneManager.LoadScene(currentSceneIndex);
         }
 
