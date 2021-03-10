@@ -13,24 +13,24 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 62139e28f4ae754788a6fa0bb83bbff3
     GuidInternal: 
-    m_lastTime: -8585865576004775808
+    m_lastTime: -8585864915843949982
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 5061ba82e8f46d4dbefcea8718aa1b8f
     GuidInternal: 
-    m_lastTime: -8585865576034775808
+    m_lastTime: -8585864915825230659
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -40,16 +40,16 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      Path: Default Work Unit/Master Audio Bus
+      Path: Default Work Unit\Master Audio Bus
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: e8fdcb9caa638c439f685c52505cf910
     GuidInternal: 
-    m_lastTime: -8585865576004775808
+    m_lastTime: -8585864915843899963
     List:
     - name: Main
       guid: f85b89731ad3cf4b84a797d2e5dc9003
@@ -59,16 +59,16 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Main
         ObjectType: 7
-      Path: Default Work Unit/Main
+      Path: Default Work Unit\Main
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 35def3d49b070940b5e0d6fb064c72b8
     GuidInternal: 
-    m_lastTime: -8585865576054775808
+    m_lastTime: -8585864915825050618
     List:
     - name: Barrier
       guid: 7337381bbd79194289da6b1af60e6e33
@@ -78,7 +78,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Barrier
         ObjectType: 3
-      Path: Default Work Unit/Barrier
+      Path: Default Work Unit\Barrier
       maxAttenuation: 0
       maxDuration: 0.211412
       minDuration: 0.121424
@@ -90,7 +90,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Dash
         ObjectType: 3
-      Path: Default Work Unit/Dash
+      Path: Default Work Unit\Dash
       maxAttenuation: 0
       maxDuration: 0.63258
       minDuration: 0.225433
@@ -102,7 +102,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: DashSwitchgirl
         ObjectType: 3
-      Path: Default Work Unit/DashSwitchgirl
+      Path: Default Work Unit\DashSwitchgirl
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: DashSwitchMan
         ObjectType: 3
-      Path: Default Work Unit/DashSwitchMan
+      Path: Default Work Unit\DashSwitchMan
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: DEAD
         ObjectType: 3
-      Path: Default Work Unit/DEAD
+      Path: Default Work Unit\DEAD
       maxAttenuation: 0
       maxDuration: 4.048916
       minDuration: 4.048916
@@ -138,7 +138,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Destroy
         ObjectType: 3
-      Path: Default Work Unit/Destroy
+      Path: Default Work Unit\Destroy
       maxAttenuation: 0
       maxDuration: 5.184153
       minDuration: 2.240694
@@ -150,7 +150,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Electric
         ObjectType: 3
-      Path: Default Work Unit/Electric
+      Path: Default Work Unit\Electric
       maxAttenuation: 16
       maxDuration: -1
       minDuration: -1
@@ -162,7 +162,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Fallingangel
         ObjectType: 3
-      Path: Default Work Unit/Fallingangel
+      Path: Default Work Unit\Fallingangel
       maxAttenuation: 0
       maxDuration: 1.821083
       minDuration: 1.550926
@@ -174,7 +174,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Jump
         ObjectType: 3
-      Path: Default Work Unit/Jump
+      Path: Default Work Unit\Jump
       maxAttenuation: 0
       maxDuration: 0.475612
       minDuration: 0.386699
@@ -186,7 +186,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: JumpSwitchgirl
         ObjectType: 3
-      Path: Default Work Unit/JumpSwitchgirl
+      Path: Default Work Unit\JumpSwitchgirl
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: JumpSwitchGuy
         ObjectType: 3
-      Path: Default Work Unit/JumpSwitchGuy
+      Path: Default Work Unit\JumpSwitchGuy
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Motor
         ObjectType: 3
-      Path: Default Work Unit/Motor
+      Path: Default Work Unit\Motor
       maxAttenuation: 21
       maxDuration: -1
       minDuration: -1
@@ -222,7 +222,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MUSIC
         ObjectType: 3
-      Path: Default Work Unit/MUSIC
+      Path: Default Work Unit\MUSIC
       maxAttenuation: 0
       maxDuration: 5449.524
       minDuration: 5449.524
@@ -234,7 +234,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MUSICGIRL
         ObjectType: 3
-      Path: Default Work Unit/MUSICGIRL
+      Path: Default Work Unit\MUSICGIRL
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -246,7 +246,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MUSICGUY
         ObjectType: 3
-      Path: Default Work Unit/MUSICGUY
+      Path: Default Work Unit\MUSICGUY
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MUSICMENU
         ObjectType: 3
-      Path: Default Work Unit/MUSICMENU
+      Path: Default Work Unit\MUSICMENU
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -270,7 +270,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: OTher
         ObjectType: 3
-      Path: Default Work Unit/OTher
+      Path: Default Work Unit\OTher
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -282,7 +282,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: OThers
         ObjectType: 3
-      Path: Default Work Unit/OThers
+      Path: Default Work Unit\OThers
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -294,7 +294,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Platform
         ObjectType: 3
-      Path: Default Work Unit/Platform
+      Path: Default Work Unit\Platform
       maxAttenuation: 21
       maxDuration: 18
       minDuration: 18
@@ -306,7 +306,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: STOP
         ObjectType: 3
-      Path: Default Work Unit/STOP
+      Path: Default Work Unit\STOP
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -318,29 +318,29 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Win
         ObjectType: 3
-      Path: Default Work Unit/Win
+      Path: Default Work Unit\Win
       maxAttenuation: 0
       maxDuration: 0.834739
       minDuration: 0.834739
   RtpcWwu:
-  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 18b6a2d63fa46d4aafa7952e6e34dd23
     GuidInternal: 
-    m_lastTime: -8585865576054775808
+    m_lastTime: -8585864915825120630
     List: []
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 61144fe65fcb194dbdafc9c667bdaff8
     GuidInternal: 
-    m_lastTime: -8585865576004775808
+    m_lastTime: -8585864915843919967
     List:
     - name: MUSIC
       guid: 9c61ea340ca2704a864dd034b26ab950
@@ -350,7 +350,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MUSIC
         ObjectType: 9
-      Path: Default Work Unit/MUSIC
+      Path: Default Work Unit\MUSIC
       values:
       - name: GIRL
         guid: 4463af33ee66b145b24fa1cff9327a67
@@ -368,14 +368,14 @@ MonoBehaviour:
       ValueIcons: []
       valuesInternal: []
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 3c6a63da1b79be4481b4cf2bd1da8489
     GuidInternal: 
-    m_lastTime: -8585865576004775808
+    m_lastTime: -8585864915843929977
     List:
     - name: Dash
       guid: 10c44ed56c7e5d4ebe2dc63c501ca368
@@ -385,7 +385,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Dash
         ObjectType: 11
-      Path: Default Work Unit/Dash
+      Path: Default Work Unit\Dash
       values:
       - name: Girl
         guid: bce3feffcd4c5b4cb7da2422530380a1
@@ -410,7 +410,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Jump
         ObjectType: 11
-      Path: Default Work Unit/Jump
+      Path: Default Work Unit\Jump
       values:
       - name: Girl
         guid: 623f0bc6ad340c4c8500e951974b10ad
@@ -435,7 +435,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MUSIC
         ObjectType: 11
-      Path: Default Work Unit/MUSIC
+      Path: Default Work Unit\MUSIC
       values:
       - name: GIRL
         guid: 78f3c122f70e3d4cbf9cb5b8e509b3cb
@@ -459,17 +459,19 @@ MonoBehaviour:
       ValueIcons: []
       valuesInternal: []
   TriggerWwu:
-  - PhysicalPath: Triggers/Default Work Unit.wwu
+  - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 24375d6341705f42a5b720d132d4620c
     GuidInternal: 
-    m_lastTime: -8585865576004775808
+    m_lastTime: -8585864915843939976
     List: []
   ExpandedItems:
   - /GJL-2021-LastMinuteTeam_WwiseProject
+  - /GJL-2021-LastMinuteTeam_WwiseProject/Events
+  - /GJL-2021-LastMinuteTeam_WwiseProject/Events/Default Work Unit
   - /GJL-2021-LastMinuteTeam_WwiseProject/SoundBanks
   - /GJL-2021-LastMinuteTeam_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1

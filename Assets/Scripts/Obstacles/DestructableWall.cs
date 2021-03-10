@@ -22,7 +22,7 @@ namespace Polar.Obstacles
         private void OnTriggerEnter(Collider other)
         {
 
-           if (other.CompareTag("Player"))
+           if (other.CompareTag("Player") && other.gameObject.layer == 6)
            {    AkSoundEngine.PostEvent("Destroy", this.gameObject);
                 foreach (var box in _boxes)
                 {

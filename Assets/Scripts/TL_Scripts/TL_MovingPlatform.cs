@@ -70,4 +70,18 @@ public class TL_MovingPlatform : MonoBehaviour
         }
     }
 
+    private void OnCollisionExit(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            if(PlayerRigidbody == null)
+            {
+                //Obtain the rigidbody from the player
+                PlayerRigidbody = collision.transform.GetComponent<Rigidbody>();
+            }
+
+            PlayerRigidbody.velocity = new Vector3(0, PlayerRigidbody.velocity.y, 0);
+        }
+    }
+
 }

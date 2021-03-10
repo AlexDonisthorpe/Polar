@@ -4,11 +4,15 @@ public class TL_GrabObjects : MonoBehaviour
 {
 	public bool GrabToggle;
 	public GameObject PickedUpObject;
-	private Animator CharacterAnimator;
     [SerializeField] private GameObject storedObject = null;
 
+    // The animations aren't setup to use a humanoid rig, so IK is out.
+    [SerializeField] Transform _leftHand;
 
-	void Start()
+    // Animation
+    private Animator CharacterAnimator;
+
+    void Start()
     {
 		CharacterAnimator = GetComponent<Animator>();
 	}
@@ -82,13 +86,20 @@ public class TL_GrabObjects : MonoBehaviour
             PickedUpObject = storedObject;
 
             //Adds the object touched by the raycast to the parent transform
-            PickedUpObject.transform.SetParent(transform);
+            PickedUpObject.transform.SetParent(_leftHand);
 
             //Freezes all positions and rotations
             PickedUpObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
 
+            var boxColliders = PickedUpObject.GetComponents<BoxCollider>();
+
+            foreach (var box in boxColliders)
+            {
+                box.enabled = false;
+            }
+
             //Sets local position
-            PickedUpObject.transform.localPosition = new Vector3(0f, 1.7f, 0f);
+            PickedUpObject.transform.localPosition = new Vector3(-0.75f, -1.1f, 0);
 
             //Sets local rotation
             PickedUpObject.transform.localRotation = new Quaternion(0, 0, 0, 0);
@@ -127,6 +138,11 @@ public class TL_GrabObjects : MonoBehaviour
 	void Update()
     {
 		GrabObjectToggle();
+        if(GrabToggle)
+        {
+            //_rightHand.transform.position = _rightHandOffset;
+            //_leftHand.transform.position = _leftHandOffset;
+        }
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -144,5 +160,4 @@ public class TL_GrabObjects : MonoBehaviour
             storedObject = null;
         }
     }
-
 }
